@@ -1,0 +1,46 @@
+#galleryTitle {
+	color:#9685a4;
+	text-align: center;
+
+}
+#imageGallery ul {
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 780px;
+	text-align: center;
+}
+#imageGallery li {
+	display: inline-block;
+	padding: 8px;
+	background:#9685a4;
+	margin:10px;
+}
+#imageGallery ul li img {
+	display: block;
+}
+#imageGallery a {
+	text-decoration: none;
+}
+/** Start Coding Here **/
+#overlay {
+background:rgba(0, 0, 0, .7);
+width: 100%;
+height: 100%;
+position:absolute;
+top: 0;
+left: 0;
+display: none;
+text-align: center
+}
+
+#overlay img {
+	margin-top: 10%;
+
+}
+
+#overlay p {
+	color: white;
+
+}
