@@ -95,6 +95,7 @@ footer {
 	height: 25px;
 	width: 25px;
 	margin: 0 5px;
+	border-radius: 50%;
 }
 
 /***************************
@@ -113,6 +114,10 @@ list-style: none;
 	background-color:#795c90;
 	color: #c190a7;
 }
+
+/** target all children of gallery li
+border-radius: 50%;
+**/
 
 #gallery li a p {
 margin: 0;
