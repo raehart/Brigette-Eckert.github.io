@@ -109,21 +109,56 @@ list-style: none;
 
 #gallery li {
 	float: left;
-	width: 45%;
-	margin: 2.5%;
 	background-color:#795c90;
 	color: #c190a7;
+	height:160px;
+	width: 160px;
+	margin: 20px;
+	padding:40px;
+	background-size: cover;
+	background-position: center;
+	
 }
 
-/** target all children of gallery li
-border-radius: 50%;
-**/
+.project {
+	border-radius: 50%;
+}
 
-#gallery li a p {
+
+.project a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#bootstrap {
+	background-image: url("../img/rainbow.png");
+}
+
+#popupquiz {
+	background-image: url("../img/trivia.jpg");
+}
+
+#pokequiz {
+	background-image: url("../img/pokemon.jpg");
+}
+
+#drawingapp {
+	background-image: url("../img/hello.png");
+}
+#diceroller {
+	background-image: url("../img/d20.png");
+}
+
+#imagegallery {
+	background-image: url("../img/imggall.jpg");
+}
+
+#gallery p {
 margin: 0;
 padding: 5%;
-font-size: .75em;
-color: #c190a7;
+font-size: 2em;
+color: #fff;
 }
 /***************************
          PAGE: ABOUT
