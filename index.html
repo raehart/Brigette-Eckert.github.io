@@ -5,15 +5,18 @@
 			<title>BB Eckert | Delevoper
 			</title>
 			<link rel="stylesheet" href="css/normalize.css">
-			<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic%7CLobster' rel='stylesheet' type='text/css'>
 			<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-			<link rel="stylesheet" href="css/main.css">
-			<link rel="stylesheet" href="css/responsive.css">
+			 <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+		    <link rel="import" href="bower_components/polymer/polymer.html">
+		    <link rel="import" href="bower_components/paper-card/paper-card.html">
+		    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+		      <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+		    <link rel="import" href="css/melon/melon.html">
+		    <link rel="stylesheet" href="css/melon/melon.css">
+		    <link rel="stylesheet" href="css/main.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		</head>
-		<body>
-			<header>
-				<a href="index.html" id="logo"> 
+		<body fullbleed layout vertical> 
 					<h1> Brigette B. Eckert </h1>
 					<h2> Web Delevoper</h2>
 				</a>
@@ -21,29 +24,12 @@
 					<ul>
 						<li><a href="index.html" class="selected">Portfilio</a></li>
 						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<!-- <li><a href="quiz.html">Quiz</a></li>  add projects to nav and combine about and contact at some point-->
+						<li><a href="apps.html">Apps</a></li>
 					</ul>
 				</nav>
 			</header>
-				<div id="wrapper">
-				<section>
-					<ul id="gallery">
-						<li class="project" id="bootstrap" title="Alternative portfolio built using bootstrap."><a href="interactivewebsite/index.html"></a>
-						</li>
-						<li class="project" id="racecal" title="Pacific Northwest Race Calendar Built using AngularJS"><a href="race-calendar/index.html"> </a>
-						</li>
-						<li class="project" id="pokequiz" title="Pokemon themed quiz made using object oriented Javascript."><a href="pokequiz/index.html"> </a>
-						</li>
-						<li class="project" id="drawingapp" title="A fun litle drawing app built using jQuery. Lets you add new colors and draw on the canvas"><a href="drawing-app/index.html"> </a>
-						</li>
-						<li class="project" id="diceroller" title="A dice rolling app built using jQuery, featuring dice commonly used in tabletop and role playing games."><a href="dice-roller/index.html"> </a>
-						</li>
-						<li class="project" id="imagegallery" title="Lightbox gallery built using JavaScript.  Featuring photographs I've taken."><a href="lightbox/lightbox.html"> </a>
-							</li>
-				
-					</ul>
-				</section>
+					
+						
 				<footer>
 					<a href="https://twitter.com/Brigette_Eckert">			
 					<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
