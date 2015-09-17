@@ -1,0 +1,30 @@
+h2 {
+	text-align: center
+}
+
+.diceBlock {
+	float: left;
+	width:30%;
+	margin: 5px;
+	height: 160px;
+	text-align: center;
+	cursor: pointer;
+}
+.diceBlock p {
+	font-weight: bold;
+	color: silver;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.7);
+	position: relative;
+	font-size: 1.2rem;
+}
+
+#d20roll, #d12roll, #d4roll, #d6roll {
+	top:-85px;
+}
+
+#d10roll  {
+	top:-100px;
+}
+#d8roll {
+	top:-110px;
+}

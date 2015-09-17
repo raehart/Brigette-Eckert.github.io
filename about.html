@@ -1,84 +1,76 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Brigette Eckert | Delevoper
-		</title>
-		<link rel="stylesheet" href="css/normalize.css">
-			<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-			 <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-		    <link rel="import" href="bower_components/polymer/polymer.html">
-		    <link rel="import" href="css/melon/melon.html">
-		    <link rel="stylesheet" href="css/melon/melon.css">
-		    <link rel="import" href="bower_components/paper-card/paper-card.html">
-		    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-			<link rel="stylesheet" href="css/main.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<header>
-				<h1> Brigette B. Eckert </h1>
-				<h2> Web Delevoper</h2>
-			<nav>
-				<ul>
-					<li><a href="index.html">Portfilio</a></li>
-					<li><a href="about.html" class="selected">About</a></li>
-					<li><a href="#">Apps</a></li>
-				</ul>
-			</nav>
-		</header>
-				
-				<img src= "img/brigette.jpg" alt="Photo of Brigette Eckert at Pax" title="Ambushed by zombies at pax prime!" class="profile-photo"/>
-
-				<h3>About Me</h3>
-				<div id="intro">
-				<p> Hi I'm Brigette. I am an web delevoper living in the beautiful pacific northwest.  I am a huge geek/nerd so when I'm not coding I'm usually playing games, hanging out with my cat, or making stuff</p>
-
-				<p> I am currently looking to break into the professional delevopment field. Feel free to email me at <a href="mailto:brigete.eckert@live.com"> Brigette.Eckert@live.com </a> or reach out to me on social media.</p>
-				</div>
-				<div id="skills">
-
+<head>
+	<meta charset="utf-8">
+	<title>Brigette Eckert | Delevoper
+	</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="css/melon/melon.html">
+  <link rel="stylesheet" href="css/melon/melon.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  fullbleed layout vertical>
+	<header> 
+		<nav>
+			<paper-tabs selected="2">
+				<paper-tab link>
+					<a href="index.html" class="horizontal center-center layout">Portfilio</a>
+				</paper-tab>
+				<paper-tab link>
+					<a href="apps.html" class="horizontal center-center layout">Apps</a>
+				</paper-tab>
+				<paper-tab link>
+					<a href="about.html" class="horizontal center-center layout">About</a>
+				</paper-tab>
+			</paper-tabs>
+		</nav>
+	<h1 id="name"> Brigette B. Eckert </h1>
+		<h2 id="title"> Web Delevoper</h2>
+	</header>
+	<div id="main-about">
+		<img src= "img/brigette.jpg" alt="Photo of Brigette Eckert at Pax" title="Ambushed by zombies at pax prime!" class="pro-pic"/>
+		<paper-material elevation="1" id="about">
+		<h3>About Me</h3>
+			<p> Hi I'm Brigette. I am an web delevoper living in the beautiful pacific northwest.  I am a huge geek/nerd so when I'm not coding I'm usually playing games, hanging out with my cat, or making stuff.
+			I am currently looking to break into the professional delevopment field. Feel free to email me at <a href="mailto:brigete.eckert@live.com"> Brigette.Eckert@live.com </a> or reach out to me on social media.</p>
+		</paper-material elevation>
 	
-				<p> 
-					I'm a coding geek and life long learner so I am constantly adding to my coding toolbelt.  
-						<h3> Skills Include</h3>
-						<h5> (but are not limited to) </h5>
-					<ul>
-						
-						<li> HTML & CSS</li>
-						<li> JavaScript</li>
-						<li> Object Orietend Development </li>
-						<li> jQuery </li>
-						<li> AngularJS</li>
-						<li> Git </li>
-				    </ul>
-
-
-				</p>
-			<footer>
-					<a href="https://twitter.com/Brigette_Eckert">			
-					<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
-					<a href="https://www.linkedin.com/in/brigetteeckert">
-					<img src="img/linked.png" alt="LinkedIn Logo" class="logo"></a>
-					<a href="https://github.com/Brigette-Eckert">
-					<img src="img/github_icon.png" alt="Octo-Kitty the Git Hub Logo" class="logo"></a>
-					<a href="http://freecodecamp.com/brigette-eckert">
-					<img src="img/freecodecamplogo.png" alt="freecodecamp-logo" class="logo">
-					</a>
-					<a href="http://www.codecademy.com/BrigetteEckert">
-					<img src="img/code-icon.png" alt="Codecadmey Logo" class="logo"></a>
-					<a href="https://teamtreehouse.com/brigetteeckert">
-					<img src="img/treehouse-icon.png" alt="Treehouse Logo" class="logo"></a>
-					<p>&copy; 2015 Brigette Eckert.</p>
-			</footer>
-		</div>
-		<!--modules-->
-    <script src="js/treehouseapp.js"></script>
-    <!--controllers-->
-    <script src="js/controllers/AboutController.js"></script>
-    <!--directives-->
-    <script src="js/directives/treehouse.js"></script>
-    <!--services-->
-    <script src="js/services/profile.js"></script>
-	</body>
+		<paper-material elevation="1" id="skills">
+			<h3> Skills Include</h3>
+			<h5> (but are not limited to) </h5>
+			<ul>	
+				<li> HTML &amp; CSS</li>
+				<li> JavaScript</li>
+				<li> Object Orietend Development </li>
+				<li> jQuery </li>
+				<li> AngularJS</li>
+				<li> Git </li>
+		  </ul>
+		  <p>I'm a coding geek and life long learner so I am constantly adding to my coding toolbelt. If you want to know more about my skill set just ask</p> 
+		</paper-material elevation>
+</div>
+	<footer>
+		<a href="https://twitter.com/Brigette_Eckert">			
+		<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
+		<a href="https://www.linkedin.com/in/brigetteeckert">
+		<img src="img/linked.png" alt="LinkedIn Logo" class="logo"></a>
+		<a href="https://github.com/Brigette-Eckert">
+		<img src="img/github_icon.png" alt="Octo-Kitty the Git Hub Logo" class="logo"></a>
+		<a href="http://freecodecamp.com/brigette-eckert">
+		<img src="img/freecodecamplogo.png" alt="freecodecamp-logo" class="logo">
+		</a>
+		<a href="http://www.codecademy.com/BrigetteEckert">
+		<img src="img/code-icon.png" alt="Codecadmey Logo" class="logo"></a>
+		<a href="https://teamtreehouse.com/brigetteeckert">
+		<img src="img/treehouse-icon.png" alt="Treehouse Logo" class="logo"></a>
+		<p>&copy; 2015 Brigette Eckert.</p>
+	</footer>
+</body>
 </html>

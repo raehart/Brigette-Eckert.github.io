@@ -1,51 +1,69 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<title>BB Eckert | Delevoper
-			</title>
-			<link rel="stylesheet" href="css/normalize.css">
-			<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-			 <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-		    <link rel="import" href="bower_components/polymer/polymer.html">
-		    <link rel="import" href="bower_components/paper-card/paper-card.html">
-		    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-		      <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-		    <link rel="import" href="css/melon/melon.html">
-		    <link rel="stylesheet" href="css/melon/melon.css">
-		    <link rel="stylesheet" href="css/main.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		</head>
-		<body fullbleed layout vertical> 
-					<h1> Brigette B. Eckert </h1>
-					<h2> Web Delevoper</h2>
-				</a>
-				<nav>
-					<ul>
-						<li><a href="index.html" class="selected">Portfilio</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="apps.html">Apps</a></li>
-					</ul>
-				</nav>
-			</header>
-					
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BB Eckert | Delevoper
+	</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="css/melon/melon.html">
+  <link rel="stylesheet" href="css/melon/melon.css">
+  <link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body fullbleed layout vertical> 
+	<header> 
+		<nav>
+			<paper-tabs selected="0">
+				<paper-tab link>
+					<a href="index.html" class="horizontal center-center layout">Portfilio</a>
+				</paper-tab>
+				<paper-tab link>
+					<a href="apps.html" class="horizontal center-center layout">Apps</a>
+				</paper-tab>
+				<paper-tab link>
+					<a href="about.html" class="horizontal center-center layout">About</a>
+				</paper-tab>
+			</paper-tabs>
+		</nav>
+		<h1 id="name"> Brigette B. Eckert </h1>
+		<h2 id="title"> Web Delevoper</h2>
+	</header>
+					<div id="projects">
+						<paper-material elevation="1" id="racecal">
+						<h3> Pacific Northwest Race Calendar</h3>
+							<a href = "race-calendar/index.html"> <img class="project-pic" src="img/racecalpreview.png"> </a>
+							<p> A calendar that displays upcoming races in Oregon and Washington. In addition to being a coder I am a runner so I wanted to have an easy way to find races and information about said races in one location. Built using a jQuery and AngularJS.  </p>
+						</paper-material>
+
+						<paper-material elevation="1" id="pokequiz">
+					 <h3> Pokemon Themed Quiz</h3>
+						<a href = "pokequiz/index.html"> <img class="project-pic" src="img/pokequiz.png"> </a>
+						<p> A mutliple choice pokemon quiz. Built using Object Oriented Javascript </p>
+					</paper-material>
+					</div>
 						
-				<footer>
-					<a href="https://twitter.com/Brigette_Eckert">			
-					<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
-					<a href="https://www.linkedin.com/in/brigetteeckert">
-					<img src="img/linked.png" alt="LinkedIn Logo" class="logo"></a>
-					<a href="https://github.com/Brigette-Eckert">
-					<img src="img/github_icon.png" alt="Octo-Kitty the Git Hub Logo" class="logo"></a>
-					<a href="http://freecodecamp.com/brigette-eckert">
-					<img src="img/freecodecamplogo.png" alt="freecodecamp-logo" class="logo">
-					</a>
-					<a href="http://www.codecademy.com/BrigetteEckert">
-					<img src="img/code-icon.png" alt="Codecadmey Logo" class="logo"></a>
-					<a href="https://teamtreehouse.com/brigetteeckert">
-					<img src="img/treehouse-icon.png" alt="Treehouse Logo" class="logo"></a>
-					<p>&copy; 2015 Brigette Eckert.</p>
-				</footer>
-			</div>
-		</body>
-	</html>
+	<footer>
+		<a href="https://twitter.com/Brigette_Eckert">			
+		<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
+		<a href="https://www.linkedin.com/in/brigetteeckert">
+		<img src="img/linked.png" alt="LinkedIn Logo" class="logo"></a>
+		<a href="https://github.com/Brigette-Eckert">
+		<img src="img/github_icon.png" alt="Octo-Kitty the Git Hub Logo" class="logo"></a>
+		<a href="http://freecodecamp.com/brigette-eckert">
+		<img src="img/freecodecamplogo.png" alt="freecodecamp-logo" class="logo">
+		</a>
+		<a href="http://www.codecademy.com/BrigetteEckert">
+		<img src="img/code-icon.png" alt="Codecadmey Logo" class="logo"></a>
+		<a href="https://teamtreehouse.com/brigetteeckert">
+		<img src="img/treehouse-icon.png" alt="Treehouse Logo" class="logo"></a>
+		<p>&copy; 2015 Brigette Eckert.</p>
+	</footer>
+</body>
+</html>
