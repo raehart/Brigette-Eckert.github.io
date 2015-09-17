@@ -1,40 +1,42 @@
 
-/*****nav bar******/
+/*****General*****/
 nav a, nav a:active, nav a:visited, nav a:focus {
 	color: #fff176;
 	font-weight: bold;
 }
 
-/*****header******/
 #name{
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 #title {
 	margin-top: 0px;
+	text-align: center;
 }
+
 /*****profile page******/
 
-#racecal, #pokequiz  {
+
+.project-card {
 	height: 30em;
-	width: 25em;
+	width: 20em;
 	margin: 2em;
 	text-align: center;
 	padding: 1em;
 	border-radius: 15%;
-
-}
-#pokequiz {
-	float: right;
+	float:left;
 }
 
-#racecal p, #pokequiz p {
+.project-card p {
 	color: #fff176;
 }
 
 
 .project-pic {
 	height: 60%;
+	width: 95%;
+	border-radius: 5%;
 }
 
 /*****app page******/
@@ -76,6 +78,7 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 #about p, #skills p, #skills li {
 	color: #fff176;
+	list-style: none;
 }
 
 
