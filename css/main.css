@@ -35,7 +35,7 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 .project-pic {
 	height: 60%;
-	width: 95%;
+	width: 85%;
 	border-radius: 5%;
 }
 
@@ -47,44 +47,34 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 
 /*****about page******/
-
-.pro-pic{
+#profile-pic{
 	border-radius: 100%;
 	height: 15em;
 	margin-right: 1em;
 	margin-left: 1em;
-
 }
 
-#about, #skills {
+.about-block {
+	float: left;
+}
+
+.aboutme {
 	height: 20em;
 	width: 20em;
-	margin: 2em;
 	text-align: center;
 	padding: 1em;
 	border-radius: 15%;
+	margin: 2em;
 
 }
 
-#skills {
-	float: right;
-	clear: right;
-}
-
-#about {
-	float: left;
-	clear: left;
-}
-
-#about p, #skills p, #skills li {
+.aboutme p, li {
 	color: #fff176;
 	list-style: none;
 }
 
-
-#main-about {
-	display: inline-block;
-	margin: 2.5em;
+#about-section {
+width: 85%;
 }
 /*****footer******/
 
