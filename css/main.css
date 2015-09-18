@@ -19,6 +19,10 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 	text-align: center;
 }
 
+main {
+	min-height: 10em;
+}
+
 /*****profile page******/
 
 
@@ -39,7 +43,7 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 
 .project-pic {
-	height: 50%;
+	min-height: 12em;
 	width: 85%;
 	border-radius: 5%;
 	margin-top: 1em;
@@ -49,12 +53,12 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 .app-btn {
 	color: #ef5350;
+	text-align: center;
 }
 
-.selected {
-	text-decoration: underline;
+.active {
+	font-family: lobster;
 }
-
 /*****about page******/
 #profile-pic{
 	border-radius: 100%;
@@ -89,6 +93,7 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 footer {
 	clear: both;
 	text-align: center;
+	margin-top: 1em;
 }
 .logo {
 	border-radius: 100%;
