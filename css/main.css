@@ -5,6 +5,10 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 	font-weight: bold;
 }
 
+:root {
+	box-sizing: border-box;
+}
+
 #name{
 	margin-bottom: 0px;
 	text-align: center;
@@ -19,13 +23,14 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 
 .project-card {
-	height: 30em;
-	width: 20em;
+	min-height: 29em;
+	min-width: 20em;
 	margin: 2em;
 	text-align: center;
 	padding: 1em;
-	border-radius: 15%;
+	border-radius: 10%;
 	float:left;
+	background: #3a464b;
 }
 
 .project-card p {
@@ -34,9 +39,10 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 
 
 .project-pic {
-	height: 60%;
+	height: 50%;
 	width: 85%;
 	border-radius: 5%;
+	margin-top: 1em;
 }
 
 /*****app page******/
@@ -45,13 +51,11 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 	color: #ef5350;
 }
 
-
 /*****about page******/
 #profile-pic{
 	border-radius: 100%;
 	height: 15em;
-	margin-right: 1em;
-	margin-left: 1em;
+	margin: 1em auto;
 }
 
 .about-block {
@@ -59,12 +63,11 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 }
 
 .aboutme {
-	height: 20em;
-	width: 20em;
+	min-height: 24em;
 	text-align: center;
 	padding: 1em;
-	border-radius: 15%;
-	margin: 2em;
+	border-radius: 10%;
+	background: #3a464b;
 
 }
 
@@ -72,10 +75,10 @@ nav a, nav a:active, nav a:visited, nav a:focus {
 	color: #fff176;
 	list-style: none;
 }
-
-#about-section {
-width: 85%;
+.aboutme ul {
+	padding:0;
 }
+
 /*****footer******/
 
 footer {

@@ -4,16 +4,21 @@
 	<meta charset="utf-8">
 	<title>Brigette Eckert | Delevoper
 	</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<!-- Polymers-->
 	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="bower_components/polymer/polymer.html">
-  <link rel="import" href="bower_components/paper-card/paper-card.html">
-  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-  <link rel="import" href="bower_components/paper-button/paper-button.html">
-  <link rel="import" href="css/melon/melon.html">
-  <link rel="stylesheet" href="css/melon/melon.css">
-	<link rel="stylesheet" href="css/main.css">
+  	<link rel="import" href="bower_components/polymer/polymer.html">
+  	<link rel="import" href="bower_components/paper-card/paper-card.html">
+  	<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  	<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  	<link rel="import" href="bower_components/paper-button/paper-button.html">
+  	<link rel="import" href="css/melon/melon.html">
+  	<link rel="stylesheet" href="css/melon/melon.css">
+  	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body  fullbleed layout vertical>
@@ -34,30 +39,35 @@
 	<h1 id="name"> Brigette B. Eckert </h1>
 		<h2 id="title"> Web Delevoper</h2>
 	</header>
-	<div id="about-section">
- <paper-material elevation="1" class="aboutme about-block">
-		<h3>About Me</h3>
-			<p> Hi I'm Brigette. I am an web delevoper living in the beautiful pacific northwest.  I am a huge geek/nerd so when I'm not coding I'm usually playing games, hanging out with my cat, or making stuff.
-			I am currently looking to break into the professional delevopment field. Feel free to email me at <a href="mailto:brigete.eckert@live.com"> Brigette.Eckert@live.com </a> or reach out to me on social media.</p>
-		</paper-material elevation>
-
-
-		<img src= "img/brigette.jpg" alt="Photo of Brigette Eckert at Pax" title="Ambushed by zombies at pax prime!" class="about-block" id="profile-pic"/>
-	
-		<paper-material elevation="1" class="aboutme about-block">
-			<h3> Skills Include</h3>
-			<h5> (but are not limited to) </h5>
-			<ul>	
-				<li> HTML &amp; CSS</li>
-				<li> JavaScript</li>
-				<li> Object Orietend Development </li>
-				<li> jQuery </li>
-				<li> AngularJS</li>
-				<li> Git </li>
-		  </ul>
-		  <p>I'm a coding geek and life long learner so I am constantly adding to my coding toolbelt. If you want to know more about my skill set just ask</p> 
-		</paper-material elevation>
-	</div>
+	<main class="container">
+		<div id="about-section" class="row">
+			<div class="col-lg-4">
+	 			<paper-material elevation="1" class="aboutme about-block">
+					<h3>About Me</h3>
+						<p> Hi I'm Brigette. I am an web delevoper living in the beautiful pacific northwest.  I am a huge geek/nerd so when I'm not coding I'm usually playing games, hanging out with my cat, or making stuff.
+						I am currently looking to break into the professional delevopment field. Feel free to email me at <a href="mailto:brigete.eckert@live.com"> Brigette.Eckert@live.com </a> or reach out to me on social media.</p>
+				</paper-material>
+			</div>
+			<div class="col-lg-4">
+				<img src= "img/brigette.jpg" alt="Photo of Brigette Eckert at Pax" title="Ambushed by zombies at pax prime!" class="about-block" id="profile-pic"/>
+			</div>
+			<div class="col-lg-4">
+				<paper-material elevation="1" class="aboutme about-block">
+					<h3> Skills Include</h3>
+					<h4> (but are not limited to) </h4>
+					<ul>	
+						<li> HTML &amp; CSS</li>
+						<li> JavaScript</li>
+						<li> Object Orietend Development </li>
+						<li> jQuery </li>
+						<li> AngularJS</li>
+						<li> Git </li>
+				  </ul>
+				  <p>I'm a coding geek and life long learner so I am constantly adding to my coding toolbelt. If you want to know more about my skill set just ask</p> 
+				</paper-material>
+			</div>
+		</div>
+	</main>
 
 	<footer>
 		<a href="https://twitter.com/Brigette_Eckert">			
