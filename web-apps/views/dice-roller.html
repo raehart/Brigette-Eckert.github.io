@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' type='text/css'>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css' >
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<title> Dice Roller</title>
-</head>
-<body>
-	<header>
-		<h2>Multiple Side Dice Roller</h2>	
-	</header>  
-<section>
+<div id="buttons">
+			<paper-button raised primary class="app-btn selected"> <a ng-href ="#/dice" >Multi-Sided Dice Roller </paper-button> </a>
+			<paper-button raised primary class="app-btn"> <a ng-href ="#/draw"> Drawing App</paper-button> </a>
+			<paper-button raised primary class="app-btn"> <a ng-href ="#/flickr"> Flick Search </paper-button> </a>
+
+</div>
+<main>
+	<h2>Multiple Side Dice Roller</h2>	
 		<div class="diceBlock">
 		<img src="img/d4.png" title="d4" alt="four sided die" id="d4" class="dice">
 		<p id="d4roll"></p>
@@ -42,10 +35,4 @@
 		<img src="img/d20.png" title="d20" alt="twenty sided die" id="d20" class="dice">
 		<p id="d20roll"></p>
 		</div>
-</section>
-
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/roll.js" type="text/javascript" charset="utf-8"> </script>
-
-</body>
-</html>
+</main>

@@ -4,6 +4,11 @@
 	<meta charset="utf-8">
 	<title>BB Eckert | Delevoper
 	</title>
+	<!-- AngularJS -->
+	<script src="js/angular/angular.min.js"></script>
+	<script src="js/angular/angular-route.min.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery/jquery.min.js"></script>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -20,7 +25,7 @@
   	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body  fullbleed layout vertical>
+<body  fullbleed layout vertical ng-app="webAppsApp">
 	<header> 
 		<nav>
 			<paper-tabs selected="1">
@@ -38,16 +43,7 @@
 		<h1 id="name"> Brigette B. Eckert </h1>
 		<h2 id="title"> Web Delevoper</h2>
 	</header>
-		<main>
-<!-- 			<ng-view  testing>
- -->
-		<paper-button raised primary class="app-btn"> Multi-Sided Dice Roller </paper-button>
-			<paper-button raised primary class="app-btn"> Drawing App</paper-button>
-				<paper-button raised primary class="app-btn"> Flick Search </paper-button>
-
-
-	<!-- 		 </ng-view> -->
-		</main>
+	<ng-view></ng-view>
 	<footer>
 		<a href="https://twitter.com/Brigette_Eckert">			
 		<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
