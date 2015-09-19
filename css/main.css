@@ -229,6 +229,12 @@
 			width: 325px;
 		}
 
+	/*****flickr app******/
+
+	.flickr-image {
+		margin: 3em;
+	}
+
 
 /*****about page******/
 	#profile-pic{
