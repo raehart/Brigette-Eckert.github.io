@@ -21,7 +21,15 @@ angular.module("webAppsApp", ['ngRoute'])
 	});
 })
 .controller('WebAppsController', ['$scope', '$location', '$routeParams', function($scope, $location, $routeParams) {
-	   $scope.isActive = function(viewLocation) {
+
+
+	 $scope.isActive = function(viewLocation) {
     return viewLocation === $location.path();
    }
+   $scope.d4roll = "";
+   $scope.roll = function(sides) {
+			var randomNumber = Math.floor(Math.random()*sides) + 1;
+   	  var diceId = "d" + sides + "roll";
+			$scope[diceId]=randomNumber;
+	 }
 }]);

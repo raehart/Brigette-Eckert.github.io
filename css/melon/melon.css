@@ -29,7 +29,7 @@ h4 { font-size: 20px; }
 
 a, a:active, a:visited, a:focus { color: #e91e63; text-decoration: none; }
 
-a:hover { color: #e91e63; text-decoration: underline; }
+a:hover { color: #e91e63; text-decoration: none; }
 
 :root { --default-primary-color: #e8485f; --dark-primary-color: #e84a5f; --light-primary-color: #c5cae9; --text-primary-color: #ffffff; --accent-color: #ff4081; --primary-background-color: #ffffff; --primary-text-color: #d81b60; --secondary-text-color: #ef5350; --disabled-text-color: #070809; --divider-color: #e0e0e0; --paper-checkbox-checked-color: #ab47bc; --paper-checkbox-checked-ink-color: #e8485f; --paper-checkbox-unchecked-color: #fff176; --paper-checkbox-unchecked-ink-color: white; --paper-checkbox-label-color: #ab47bc; --paper-fab-background: #e8485f; --paper-fab-disabled-background: #7a8e95; --paper-fab-disabled-text: #070809; --paper-icon-button-disabled-text: #7a8e95; --paper-input-container-color: #ccc; --paper-input-container-focus-color: #e8485f; --paper-input-container-invalid-color: #f8bbd0; --paper-input-container-input-color: #ccc; --paper-menu-background-color: #3a474c; --paper-menu-color: #c2185b; --paper-menu-disabled-color: #7a8e95; --paper-progress-active-color: #00796b; --paper-progress-secondary-color: #ab47bc; --paper-radio-button-checked-color: #ab47bc; --paper-radio-button-checked-ink-color: white; --paper-radio-button-unchecked-color: #ffccbc; --paper-radio-button-unchecked-ink-color: white; --paper-radio-button-label-color: #c51162; --paper-slider-knob-color: #00796b; --paper-slider-active-color: #00796b; --paper-slider-pin-color: #00796b; --paper-spinner-layer-1-color: #00796b; --paper-spinner-layer-2-color: #00796b; --paper-spinner-layer-3-color: #00796b; --paper-spinner-layer-4-color: #00796b; --paper-tabs-selection-bar-color: #fff176; --paper-tab-ink: #fff176; --paper-toggle-button-checked-bar-color: #00796b; --paper-toggle-button-checked-button-color: #00796b; --paper-toggle-button-checked-ink-color: #00796b; --paper-toggle-button-unchecked-bar-color: #ffccbc; --paper-toggle-button-unchecked-button-color: #ffccbc; --paper-toggle-button-unchecked-ink-color: #ffccbc; --paper-toolbar-background: #e91e63; --paper-toolbar-color: #fff176; }
 
@@ -47,7 +47,7 @@ paper-button.warning, paper-button.btn-warning, paper-button[warning] { color: #
 paper-button.warning[raised], paper-button.btn-warning[raised], paper-button[warning][raised] { background-color: #ff7043; color: #4d2214; }
 paper-button.error, paper-button.btn-error, paper-button[error] { color: #e57373; }
 paper-button.error[raised], paper-button.btn-error[raised], paper-button[error][raised] { background-color: #e57373; color: #452323; }
-paper-button.link, paper-button.btn-link, paper-button[link] { text-decoration: underline; }
+paper-button.link, paper-button.btn-link, paper-button[link] { text-decoration: none; }
 paper-button[raised] { color: #d81b60; }
 paper-button[disabled] { color: #070809 !important; background: #7a8e95 !important; }
 

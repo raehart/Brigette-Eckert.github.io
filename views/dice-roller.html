@@ -1,30 +1,33 @@
-	<h2>Multiple Side Dice Roller</h2>	
-		<div class="diceBlock">
-		<img src="img/d4.png" title="d4" alt="four sided die" id="d4" class="dice">
-		<p id="d4roll"></p>
-		</div>
-		
-		<div class="diceBlock">
-		<img src="img/d6.png" title="d6" alt="six sided die" id="d6" class="dice">
-		<p id="d6roll"></p>
-		</div>
 
-		<div class="diceBlock">
-		<img src="img/d8.png" title="d8" alt="eight sided die" id="d8" class="dice">
-		<p id="d8roll"></p>
-		</div>
+	<h3 class="app-title text-center">Multiple Side Dice Roller</h3>	<div class="row"> 
+			<div class="diceBlock col-lg-2 col-md-4 col-sm-4 col-xs-6" ng-click="roll(4)">
+				<img src="img/d4.png" title="d4" alt="four sided die" id="d4" class="dice">
+				<p id="d4roll">{{d4roll}}</p>
+			</div>
+			
+			<div class="diceBlock col-lg-2 col-md-4 col-sm-4 col-xs-6"  ng-click="roll(6)">
+				<img src="img/d6.png" title="d6" alt="six sided die" id="d6" class="dice">
+				<p id="d6roll">{{d6roll}}</p>
+			</div>
 
-		<div class="diceBlock">
-		<img src="img/d10.png" title="d10" alt="ten sided die" id="d10" class="dice">
-		<p id="d10roll"></p>
-		</div>
+			<div class="diceBlock col-lg-2 col-md-4 col-sm-4 col-xs-6" ng-click="roll(8)">
+				<img src="img/d8.png" title="d8" alt="eight sided die" id="d8" class="dice">
+				<p id="d8roll">{{d8roll}}</p>
+			</div>
 
-		<div class="diceBlock">
-		<img src="img/d12.png" title="d12" alt="tweleve sided die" id="d12" class="dice">
-		<p id="d12roll"></p>
-		</div>
+			<div class="diceBlock col-lg-2 col-md-4 col-sm-4 col-xs-6" ng-click="roll(10)">
+				<img src="img/d10.png" title="d10" alt="ten sided die" id="d10" class="dice">
+				<p id="d10roll">{{d10roll}}</p>
+			</div>
 
-		<div class="diceBlock">
-		<img src="img/d20.png" title="d20" alt="twenty sided die" id="d20" class="dice">
-		<p id="d20roll"></p>
-		</div>
+			<div class="diceBlock col-lg-2 col-md-4 col-sm-4 col-xs-6" ng-click="roll(12)">
+				<img src="img/d12.png" title="d12" alt="tweleve sided die" id="d12" class="dice" >
+				<p id="d12roll">{{d12roll}}</p>
+			</div>
+
+			<div class="diceBlock col-lg-2 col-md-4 col-sm-4 col-xs-6"  ng-click="roll(20)">
+				<img src="img/d20.png" title="d20" alt="twenty sided die" id="d20" class="dice">
+				<p id="d20roll">{{d20roll}}</p>
+			</div>
+	</div>
+
