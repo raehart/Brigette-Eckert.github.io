@@ -1,143 +1,285 @@
 
 /*****General*****/
-nav a, nav a:active, nav a:visited, nav a:focus {
-	color: #fff176;
-	font-weight: bold;
-}
 
-:root {
-	box-sizing: border-box;
-}
+	nav a, nav a:active, nav a:visited, nav a:focus {
+		color: #fff176;
+		font-weight: bold;
+	}
 
-#name{
-	margin-bottom: 0px;
-	text-align: center;
-}
+	:root {
+		box-sizing: border-box;
+	}
 
-#title {
-	margin-top: 0px;
-	text-align: center;
-}
+	#name{
+		margin-bottom: 0px;
+		text-align: center;
+	}
 
-main {
-	min-height: 10em;
-}
+	#title {
+		margin-top: 0px;
+		text-align: center;
+	}
+
+	main {
+		min-height: 10em;
+	}
 
 /*****profile page******/
 
 
-.project-card {
-	min-height: 29em;
-	min-width: 20em;
-	margin: 2em;
-	text-align: center;
-	padding: 1em;
-	border-radius: 10%;
-	float:left;
-	background: #3a464b;
-}
+	.project-card {
+		min-height: 29em;
+		min-width: 20em;
+		margin: 2em;
+		text-align: center;
+		padding: 1em;
+		border-radius: 10%;
+		float:left;
+		background: #3a464b;
+	}
 
-.project-card p {
-	color: #fff176;
-}
+	.project-card p {
+		color: #fff176;
+	}
 
 
-.project-pic {
-	min-height: 12em;
-	width: 85%;
-	border-radius: 5%;
-	margin-top: 1em;
-}
+	.project-pic {
+		min-height: 12em;
+		width: 85%;
+		border-radius: 5%;
+		margin-top: 1em;
+	}
 
 /*****app page******/
 
-.app-btn {
-	color: #ef5350;
-	text-align: center;
-}
+	.app-btn {
+		color: #ef5350;
+		text-align: center;
+	}
 
-.active {
-	font-weight: bold;
-	font-style: italic;
-}
-
-
-.app-title {
-	color: #fff176;
-}
-
-#buttons {
-	margin: 1.5em;
-}
-/*****dice app******/
-
-.diceBlock {
-	text-align: center;
-	cursor: pointer;
-}
-
-.diceBlock p {
-	font-weight: bold;
-	color: silver;
-    text-shadow: 0px -1px 0px rgba(0,0,0,.7);
-	position: relative;
-	font-size: 1.2rem;
-}
+	.active {
+		font-weight: bold;
+		font-style: italic;
+	}
 
 
-#d20roll, #d12roll, #d4roll, #d6roll {
-	top:-85px;
-}
+	.app-title {
+		color: #fff176;
+	}
 
-#d10roll, #d8roll  {
-	top:-100px;
-}
+	#buttons {
+		margin: 1.5em;
+	}
+	/*****dice app******/
 
-.row {
-	margin-top: 2em;
-}
+		.diceBlock {
+			text-align: center;
+			cursor: pointer;
+		}
+
+		.diceBlock p {
+			font-weight: bold;
+			color: silver;
+		    text-shadow: 0px -1px 0px rgba(0,0,0,.7);
+			position: relative;
+			font-size: 1.2rem;
+		}
+
+
+		#d20roll, #d12roll, #d4roll, #d6roll {
+			top:-85px;
+		}
+
+		#d10roll, #d8roll  {
+			top:-100px;
+		}
+
+		.row {
+			margin-top: 2em;
+		}
+
+
+	/*****drawing app******/
+		canvas {
+			background: #fff;
+			display: block;
+			margin: 50px auto 10px;
+			border-radius: 5px;
+			box-shadow: 0 4px 0 0 #222;
+			cursor: url(../img/cursor.png), crosshair;
+		}
+		.controls {
+			min-height: 60px;
+			margin: 0 auto;
+			width: 600px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.controls ul {
+			list-style:none;
+			margin: 0;
+			float: 	left;
+			padding: 10px 0 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.controls ul li, #newColor {
+			display:block;
+			height: 54px;
+			width: 54px;
+			border-radius: 60px;
+			cursor: pointer;
+			border: 0;
+			box-shadow: 0 3px 0 0 #222;
+		}
+
+		.controls ul li {
+			display: inline-block;
+			margin: 0 5px 10px;
+		}
+
+		.red {
+			background: #fc4c4f;
+		}
+
+		.blue {
+			background: #4fa3fc;
+		}
+
+		.yellow {
+			background: #ECD13F;
+		}
+
+		.selected {
+			border: 7px solid #fff;
+			width: 40px;
+			height: 40px;
+		}
+		.controls button {
+			background: #68B25B;
+			box-shadow: 0 3px 0 0 #6A845F;
+			color: #fff;
+			outline: none;
+			cursor: pointer;
+			text-shadow: 0 1px #6A845F;
+			display: block;
+			font-size: 16px;
+			line-height: 40px;
+		}
+		#revealColorSelect {
+			border: none;
+			border-radius: 5px;
+			margin: 10px auto;
+			padding: 5px 20px;
+			width: 160px;
+		}
+
+		/* New Color Palette */
+		#colorSelect {
+			background: #fff;
+			border-radius: 5px;
+			clear: both;
+			margin: 20px auto 0;
+			padding: 10px;
+			width: 305px;
+			position: relative;
+				
+			display:none;
+		}
+		#colorSelect:after {
+			bottom: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(255, 255, 255, 0);
+			border-bottom-color: #fff;
+			border-width: 10px;
+			margin-left: -10px;
+		}
+
+		#newColor {
+			width: 80px;
+			height: 80px;
+			border-radius: 3px;
+			box-shadow: none;
+			float: left;
+			border: none;
+			margin: 10px 20px 20px 10px;
+
+		}
+		.sliders p {
+			margin: 8px 0;
+			vertical-align: middle;
+		}
+		.sliders label {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			width: 35px;
+			font-size: 14px;
+			color: #6D574E;
+		}
+		.sliders input {
+			position: relative;
+			top: 2px;
+		}
+		#colorSelect button {
+			border: none;
+			border-top: 1px solid #6A845F;
+			border-radius: 0 0 5px 5px;
+			clear: both;
+			margin: 10px -10px -7px;
+			padding: 5px 10px;
+			width: 325px;
+		}
+
+
 /*****about page******/
-#profile-pic{
-	border-radius: 100%;
-	height: 15em;
-	margin: 1em;
-	margin-left: 20%;
-}
+	#profile-pic{
+		border-radius: 100%;
+		height: 15em;
+		margin: 1em;
+		margin-left: 20%;
+	}
 
-.about-block {
-	float: left;
-}
+	.about-block {
+		float: left;
+	}
 
-.aboutme {
-	min-height: 24em;
-	text-align: center;
-	padding: 1em;
-	border-radius: 10%;
-	background: #3a464b;
+	.aboutme {
+		min-height: 24em;
+		text-align: center;
+		padding: 1em;
+		border-radius: 10%;
+		background: #3a464b;
 
-}
+	}
 
-.aboutme p, li {
-	color: #fff176;
-	list-style: none;
-}
-.aboutme ul {
-	padding:0;
-}
+	.aboutme p, li {
+		color: #fff176;
+		list-style: none;
+	}
+	.aboutme ul {
+		padding:0;
+	}
 
 
-h2 {
-	text-align: center
-}
+	h2 {
+		text-align: center
+	}
 
 /*****footer******/
 
-footer {
-	clear: both;
-	text-align: center;
-	margin-top: 1em;
-}
-.logo {
-	border-radius: 100%;
-	height: 1.75em;
-}
+	footer {
+		clear: both;
+		text-align: center;
+		margin-top: 1em;
+	}
+	.logo {
+		border-radius: 100%;
+		height: 1.75em;
+	}

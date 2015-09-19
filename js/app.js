@@ -26,10 +26,15 @@ angular.module("webAppsApp", ['ngRoute'])
 	 $scope.isActive = function(viewLocation) {
     return viewLocation === $location.path();
    }
-   $scope.d4roll = "";
+   //dice roller app
    $scope.roll = function(sides) {
 			var randomNumber = Math.floor(Math.random()*sides) + 1;
    	  var diceId = "d" + sides + "roll";
 			$scope[diceId]=randomNumber;
 	 }
+
+	 //drawing app
+
+
+	 //flickr app
 }]);
