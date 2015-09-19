@@ -32,9 +32,4 @@ angular.module("webAppsApp", ['ngRoute'])
    	  var diceId = "d" + sides + "roll";
 			$scope[diceId]=randomNumber;
 	 }
-
-	 //drawing app
-
-
-	 //flickr app
 }]);
