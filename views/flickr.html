@@ -31,7 +31,7 @@ $('form').submit(function(evt) {
     function displayPhotos(data) {
       var photoHTML = '<ul>';
       $.each(data.items,function(i,photo) {
-        photoHTML += '<li class="col-lg-4 col-md-4">';
+        photoHTML += '<li class="col-lg-4 col-md-4 flickr-col">';
         photoHTML += '<a href="' + photo.link + ' " class="flickr-image">';
         photoHTML += '<img src="' + photo.media.m + '"></a></li>';
       }); // end each

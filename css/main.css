@@ -231,8 +231,8 @@
 
 	/*****flickr app******/
 
-	.flickr-image {
-		margin: 3em;
+	.flickr-col {
+		margin: 1em 0px;
 	}
 
 
@@ -249,7 +249,8 @@
 	}
 
 	.aboutme {
-		min-height: 24em;
+		min-height: 35em;
+		min-width: 30em;
 		text-align: center;
 		padding: 1em;
 		border-radius: 10%;
