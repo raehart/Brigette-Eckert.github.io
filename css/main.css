@@ -233,8 +233,13 @@
 
 	.flickr-col {
 		margin: 1em 0px;
-	}
 
+	}
+	.flickr-image{
+		padding: 1em;
+		height: 100%;
+		/*want height to be 100% of div*/
+	}
 
 /*****about page******/
 	#profile-pic{
@@ -260,9 +265,6 @@
 		color: #fff176;
 		list-style: none;
 	}
-
-
-
 
 	h2, h3 {
 		text-align: center
