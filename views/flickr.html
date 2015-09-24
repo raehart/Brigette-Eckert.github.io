@@ -1,10 +1,11 @@
-
+  
+    <div id= "search-box">
      <form>
         <label for="search">Type a search term</label>
         <input type="search" name="search" id="search">
-        <input type="submit" value="Search" id="submit">
+     <input type="submit" value="Search" id="submit" class="search-button">
       </form>
-  
+  </div>
   <ul id="photos">
 
   </ul>
@@ -29,7 +30,7 @@ $('form').submit(function(evt) {
       format: "json"
     };
     function displayPhotos(data) {
-      var photoHTML = '<ul>';
+      var photoHTML = '<ul class="row">';
       $.each(data.items,function(i,photo) {
         photoHTML += '<li class="col-lg-4 col-md-4 flickr-col">';
         photoHTML += '<a href="' + photo.link + ' " class="flickr-link">';

@@ -75,6 +75,7 @@
 		.diceBlock {
 			text-align: center;
 			cursor: pointer;
+			margin-top: 1.5em;
 		}
 
 		.diceBlock p {
@@ -103,7 +104,7 @@
 		canvas {
 			background: #fff;
 			display: block;
-			margin: 50px auto 10px;
+			margin: 2em auto 1.5em;
 			border-radius: 5px;
 			box-shadow: 0 4px 0 0 #222;
 			cursor: url(../img/cursor.png), crosshair;
@@ -238,9 +239,22 @@
 	.flickr-image{
 		padding: 1em;
 		height: 100%;
-		/*want height to be 100% of div*/
+	}
+	
+	.search-button {
+		background: #d81b60;
+		color: #fff176;
+		margin-top: 1.5em;
+	}
+	
+
+	#search-box {
+		text-align: center;
 	}
 
+	#photos li {
+		height: 15em;
+	}
 /*****about page******/
 	#profile-pic{
 		border-radius: 100%;
