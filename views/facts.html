@@ -1,0 +1,21 @@
+<div class="container main">
+		<paper-button raised primary class="center-block" id="fact-btn"> Learn Something About Cats </paper-button>
+		<div class="data text-center" id="fact-display">
+</div>
+
+<script>
+$(document).ready(function() {
+		var url = "http://crossorigin.me/http://catfacts-api.appspot.com/api/facts?number=1?callback=JSON_CALLBACK?";
+		var fact = "";
+		var factHTML = "";
+
+		$("#fact-btn").click(function() {
+		$.getJSON(url, function(data) {
+				fact = data.facts[0];
+				$("#fact-display").html(fact)
+		});
+
+		});
+	});
+
+ </script> 

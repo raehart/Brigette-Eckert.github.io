@@ -255,6 +255,21 @@
 	#photos li {
 		height: 15em;
 	}
+
+
+	/*****cat facts app******/
+
+	#fact-btn {
+		max-width: 20em;
+		margin: 2.5em auto;
+	}
+
+	#fact-display {
+		color: #fff176;
+		font-style: italic;
+		margin-top: 5em;
+		margin-bottom: 10em;
+	}
 /*****about page******/
 	#profile-pic{
 		border-radius: 100%;
