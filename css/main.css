@@ -268,7 +268,12 @@
 		color: #fff176;
 		font-style: italic;
 		margin-top: 5em;
+		margin-bottom: 1em;
+	}
+
+	#tweet-container {
 		margin-bottom: 10em;
+		text-align: center;
 	}
 /*****about page******/
 	#profile-pic{
