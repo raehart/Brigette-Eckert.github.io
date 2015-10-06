@@ -7,7 +7,7 @@
 
 <script>
 $(document).ready(function() {
-		var url = "http://crossorigin.me/http://catfacts-api.appspot.com/api/facts?number=1?callback=JSON_CALLBACK?"
+		var url = "http://crossorigin.me/http://catfacts-api.appspot.com/api/facts?number=1?callback=JSON_CALLBACK?";
 		//twitter button js
 		window.twttr = (function(d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0],
@@ -28,10 +28,10 @@ $(document).ready(function() {
 
 
 		$("#fact-btn").click(function() {
+			$("#tweet-container").html("");	
 		$.getJSON(url, function(data) {
 				fact = data.facts[0];
 				$("#fact-display").html(fact);
-
 			twttr.widgets.createShareButton(
 				  'http://goo.gl/HWUb7i',
 				  document.getElementById('tweet-container'),
