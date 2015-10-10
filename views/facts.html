@@ -28,7 +28,8 @@ $(document).ready(function() {
 
 
 		$("#fact-btn").click(function() {
-			$("#tweet-container").html("");	
+			$("#tweet-container").html("");
+			console.log("cleared")	
 		$.getJSON(url, function(data) {
 				fact = data.facts[0];
 				$("#fact-display").html(fact);
