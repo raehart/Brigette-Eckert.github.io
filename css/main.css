@@ -76,6 +76,10 @@
 		}
 
 	}
+
+	.gitLink {
+		text-align: center;
+	}
 	/*****dice app******/
 
 		.diceBlock {
