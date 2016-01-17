@@ -20,6 +20,11 @@ angular.module("webAppsApp", ['ngRoute'])
 		controller: 'WebAppsController',
 		templateUrl: 'views/facts.html'
 	})
+	.when('/calc', {
+		controller: 'WebAppsController',
+		templateUrl: 'views/calc.html'
+
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
