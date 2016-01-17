@@ -25,16 +25,14 @@
 	}
 
 /*****profile page******/
-
-
+	
 	.project-card {
-		min-height: 29em;
-		min-width: 20em;
+		height: 33em;
+		width: 25em;
 		margin: 2em;
 		text-align: center;
 		padding: 1em;
 		border-radius: 10%;
-		float:left;
 		background: #3a464b;
 	}
 
@@ -44,7 +42,7 @@
 
 
 	.project-pic {
-		min-height: 12em;
+		height: 220px;
 		width: 85%;
 		border-radius: 5%;
 		margin-top: 1em;
