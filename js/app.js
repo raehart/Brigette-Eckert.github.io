@@ -19,6 +19,7 @@ angular.module("webAppsApp", ['ngRoute'])
 	.when('/facts', {
 		controller: 'WebAppsController',
 		templateUrl: 'views/facts.html'
+
 	})
 	.otherwise({
 		redirectTo: '/'
