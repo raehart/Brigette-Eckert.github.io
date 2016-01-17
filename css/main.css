@@ -76,9 +76,10 @@
 
 	}
 
-	.gitLink {
+	.smallSum {
 		text-align: center;
-		margin-top: 2em;
+		color: #fff176;
+
 	}
 	/*****dice app******/
 
@@ -279,6 +280,7 @@
 		font-style: italic;
 		margin-top: 5em;
 		margin-bottom: 1em;
+		font-size: 20px;
 	}
 
 	#tweet-container {
