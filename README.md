@@ -8,10 +8,11 @@ My portfolio displaying my current work.
   Search Engine Optimzation 
   Using polymer themes 
   Praticed using angular
-  Praticed using responsive desgin
+  Praticed using responsive design
 
 #Future features/To-Do: 
 
   Add more projects as I finish them 
-  Add github repo to apps page
+  Convert from CSS to SASS 
+  Remove middle page? 
 
