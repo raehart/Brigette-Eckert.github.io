@@ -14,7 +14,7 @@ My portfolio displaying my current work.
 
   Add more projects as I finish them 
   Convert from CSS to SASS 
-  Remove small projects page (branch for now)
   host libareis from google 
   redo main page in AngularJS
+  replace dice project with better small project 
 
