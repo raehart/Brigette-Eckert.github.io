@@ -14,5 +14,5 @@ My portfolio displaying my current work.
 
   Add more projects as I finish them 
   Convert from CSS to SASS 
-  
+  replace dice project with better small project 
 
