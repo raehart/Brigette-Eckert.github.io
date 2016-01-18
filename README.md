@@ -17,4 +17,4 @@ My portfolio displaying my current work.
   host libareis from google 
   redo main page in AngularJS
   replace dice project with better small project 
-
+  standardize aspect ratio on images 
