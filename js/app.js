@@ -48,8 +48,4 @@ angular.module('PortfolioApp', ['ngRoute'])
 		github: 'https://github.com/Brigette-Eckert/calculator',
 		link: 'http://git.bbeckert.com/calculator/'
 	}]
-	$scope.getProjectStyle = function(img) { 
-		console.log(img)
-		return '{background-image: url("../' + img + '")}'
-	}
 }])

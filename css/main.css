@@ -16,9 +16,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lobster", cursive;
   color: #FFF176; }
 
-@media screen and (max-width: 768px) {
-  main {
-    margin-top: 50px; } }
+main {
+  width: 98%;
+  margin: auto; }
+  @media screen and (max-width: 768px) {
+    main {
+      margin-top: 50px; } }
 
 nav.navbar {
   background: linear-gradient(#930e3b, #E91E63);
@@ -83,7 +86,7 @@ nav.navbar {
       border-radius: 50%;
       padding: 20px 30px;
       text-align: center;
-      background-color: rgba(233, 30, 99, 0.4); }
+      background-color: rgba(233, 30, 99, 0.2); }
       #projects .project .content h2 {
         text-shadow: 2px 8px 8px #000; }
       #projects .project .content p {

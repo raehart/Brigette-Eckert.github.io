@@ -1,12 +1,17 @@
+// Design by Kenneth Black 2015, lawlietblack.com
+
 $primary-color: #E91E63;
 $primary-color-dark: darken($primary-color, 20%);
 $font-color-yellow: #FFF176;
 $background-color:#2A363B;
+
 $lobster: 'Lobster', cursive;
 $cabin: 'Cabin', Helvetica, Arial, sans-serif;
+
 $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
+
 $icon-size: 40px;
 $project-disc-size: 400px;
 
@@ -32,13 +37,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: $font-color-yellow; }
 
 main {
+	width: 98%;
+	margin: auto;
 	@media screen and (max-width: $screen-small) {
 		margin-top: 50px;
 	}
 }
 
 nav.navbar {
-	background: linear-gradient(darken($primary-color, 20%), $primary-color);
+	background: linear-gradient($primary-color-dark, $primary-color);
 	padding:0;
 	height: 90px;
 	border-radius: 0;
@@ -101,7 +108,7 @@ nav.navbar {
 			border-radius: 50%;
 			padding: 20px 30px;
 			text-align: center;
-			background-color: rgba(233, 30, 99, 0.4);
+			background-color: rgba(233, 30, 99, 0.2);
 			h2 {
 				text-shadow: 2px 8px 8px #000;
 			}
@@ -116,7 +123,7 @@ nav.navbar {
 				font-size: 1.2em;
 				font-weight: bold;
 				position: absolute;
-				background-color: darken($primary-color, 20%);
+				background-color: $primary-color-dark;
 				padding: 20px 0;
 				width: 70px;
 				height: 70px;
