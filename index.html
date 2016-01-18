@@ -4,105 +4,59 @@
 	<meta charset="utf-8">
 	<meta name="description"
 	 content="Brigette Eckert's Portfolio. Front End Web Developer with a Focus on Javascript in Portland, OR">
-	<title>Brigette Eckert | Web Delevoper
-	</title>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<!--favicon -->
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-	<!-- Polymers-->
-	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  	<link rel="import" href="bower_components/polymer/polymer.html">
-  	<link rel="import" href="bower_components/paper-card/paper-card.html">
-  	<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-  	<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-  	<link rel="import" href="bower_components/paper-button/paper-button.html">
-  	<link rel="import" href="css/melon/melon.html">
-  	<link rel="stylesheet" href="css/melon/melon.css">
-  	<link rel="stylesheet" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brigette Eckert | Web Delevoper</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="css/melon/melon.css"> -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body fullbleed layout vertical> 
-	<header> 
-		<nav>
-			<paper-tabs selected="0">
-				<paper-tab link>
-					<a href="index.html" class="horizontal center-center layout">Portfilio</a>
-				</paper-tab>
-				<paper-tab link>
-					<a href="about.html" class="horizontal center-center layout">About</a>
-				</paper-tab>
-			</paper-tabs>
+<body ng-app="PortfolioApp"> 
+	<header ng-controller="NavController"> 
+		<nav class="navbar">
+			<div class="navbar-header">
+				<h1>Brigette Eckert</h1>
+				<p>Web Delevoper</p>
+			</div>
+			<ul class="nav navbar-nav navbar-right clearfix">
+				<li><a ng-class="{active: isActive('/')}" href="#/">Portfolio</a></li>
+				<li><a ng-class="{active: isActive('/about')}"} href="#/about">About</a></li>
+			</ul>
 		</nav>
-		<h1 id="name"> Brigette Eckert </h1>
-		<h2 id="title"> Web Delevoper</h2>
 	</header>
-	<main class="container">
-		<div id="projects" class="row">
-			<div class="col-lg-4 col-xs-12">
-				<paper-material elevation="1" class="project-card">
-				<h3> Pacific Northwest Race Calendar</h3>
-					<a href = "http://git.bbeckert.com/race-calendar/#/"> <img class="project-pic" src="img/racecalpreview.png"> </a>
-					<p> A calendar that displays upcoming races in Oregon and Washington. Built using a jQuery, JSON, and AngularJS.  </p>
-					<p class="github-linK"> <a href= "https://github.com/Brigette-Eckert/PacNW-Race-Calendar" >Github Repository</a></p>
-				</paper-material>
-			</div>
-			<div class="col-lg-4 col-xs-12">
-				<paper-material elevation="1" class="project-card">
-			 <h3> Pokedex</h3>
-				<a href = "http://pokedex.lawlietblack.com/#/"> <img class="project-pic" src="img/org3.png"> </a>
-				<p> A guide to all the Pokemon in the Pokemon universe. Built with Angular JS and an external API.     </p>
-				<p class="github-linK"> <a href="https://github.com/Brigette-Eckert/pokedex" >Github Repository</a></p>
-			</paper-material>
-			</div>
-
-			<div class="col-lg-4 col-xs-12">
-			<paper-material elevation="1" class="project-card">
-			 <h3> Random Cat Fact Generator </h3>
-				<a href = "http://git.bbeckert.com/cat_facts/"> <img class="project-pic" src="img/cat_wow.jpg"> </a>
-				<p> A random fact generator that displays cat facts when the button is clicked and allows user's to tweet fact.  Build with JavaScript, Twitter developer tools and external restful API.  Reversed engineered as a student at Free Code Camp.   </p>
-					<p class="github-linK"> <a href="https://github.com/Brigette-Eckert/cat_facts" >Github Repository</a></p>
-			</paper-material>
-			</div>
-			
-			
-			<div class="col-lg-4 col-xs-12">
-			<paper-material elevation="1" class="project-card">
-			 <h3> Pomodoro Clock </h3>
-				<a href = "http://git.bbeckert.com/pomodoro/"> <img class="project-pic" src="img/clock.png"> </a>
-				<p> A pomodoro clock that alerts user with sound when period is over, allows user to customize work and break periods. Built using JavaScript. Reversed engineered as a student at Free Code Camp.</p>
-					<p class="github-linK"> <a href="https://github.com/Brigette-Eckert/pomodoro-clock" >Github Repository</a></p>
-			</paper-material>
-			</div>
-
-			<div class="col-lg-4 col-xs-12">
-			<paper-material elevation="1" class="project-card">
-			 <h3> Calculator </h3>
-				<a href = "http://git.bbeckert.com/calculator/"> <img class="project-pic" src="img/calc.png"> </a>
-				<p> A calculator built using Javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp. </p>
-					<p class="github-linK"> <a href="https://github.com/Brigette-Eckert/calculator" >Github Repository</a></p>
-			</paper-material>
-			</div>
-		
-
-		</div>
-	</main>					
+	<main>
+		<ng-view></ng-view>
+	</main>
 	<footer>
-		<a href="https://twitter.com/Brigette_Eckert">			
-		<img src="img/twitter.png" alt="Twitter Logo" class="logo"></a>
-		<a href="https://www.linkedin.com/in/brigetteeckert">
-		<img src="img/linked.png" alt="LinkedIn Logo" class="logo"></a>
-		<a href="https://github.com/Brigette-Eckert">
-		<img src="img/github_icon.png" alt="Octo-Kitty the Git Hub Logo" class="logo"></a>
-		<a href="http://freecodecamp.com/brigette-eckert">
-		<img src="img/freecodecamplogo.png" alt="freecodecamp-logo" class="logo">
-		</a>
-		<a href="http://www.codecademy.com/BrigetteEckert">
-		<img src="img/code-icon.png" alt="Codecadmey Logo" class="logo"></a>
-		<a href="https://teamtreehouse.com/brigetteeckert">
-		<img src="img/treehouse-icon.png" alt="Treehouse Logo" class="logo"></a>
+		<div class="icons">
+			<a href="https://twitter.com/Brigette_Eckert">			
+				<img src="img/icons/twitter.png" alt="Twitter Logo" class="logo">
+			</a>
+			<a href="https://www.linkedin.com/in/brigetteeckert">
+				<img src="img/icons/linkedin.png" alt="LinkedIn Logo" class="logo">
+			</a>
+			<a href="https://github.com/Brigette-Eckert">
+				<img src="img/icons/git.png" alt="Octo-Kitty the Git Hub Logo" class="logo">
+			</a>
+			<a href="http://freecodecamp.com/brigette-eckert">
+				<img src="img/icons/fcc.png" alt="freecodecamp-logo" class="logo">
+			</a>
+			<a href="http://www.codecademy.com/BrigetteEckert">
+				<img src="img/icons/code.png" alt="Codecadmey Logo" class="logo">
+			</a>
+			<a href="https://teamtreehouse.com/brigetteeckert">
+				<img src="img/icons/treehouse.png" alt="Treehouse Logo" class="logo">
+			</a>
+		</div>
 		<p>&copy; 2015 Brigette Eckert </p>
 	</footer>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

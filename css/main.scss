@@ -1,0 +1,156 @@
+$primary-color: #E91E63;
+$primary-color-dark: darken($primary-color, 20%);
+$font-color-yellow: #FFF176;
+$background-color:#2A363B;
+$lobster: 'Lobster', cursive;
+$cabin: 'Cabin', Helvetica, Arial, sans-serif;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+$icon-size: 40px;
+$project-disc-size: 400px;
+
+@import "_mixins.scss";
+
+:root {
+	box-sizing: border-box; }
+
+body {
+	background-color: $background-color;
+	font-family: $cabin;
+	color: #FFFFFF; }
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $lobster;
+	color: $font-color-yellow; }
+
+main {
+	@media screen and (max-width: $screen-small) {
+		margin-top: 50px;
+	}
+}
+
+nav.navbar {
+	background: linear-gradient(darken($primary-color, 20%), $primary-color);
+	padding:0;
+	height: 90px;
+	border-radius: 0;
+	border-bottom: 4px solid $primary-color-dark;
+	@media screen and (max-width: $screen-small) {
+		border: none;
+	}
+	.navbar-header {
+		h1 {
+			margin: 8px 40px 8px; }
+		p {
+			font-size: 1.2em;
+			margin: 0 60px 10px; }
+		@media screen and (max-width: $screen-small) {
+			text-align: center;
+		}
+	}
+	.navbar-right {
+		margin:0 20px;
+		height: 90px;
+		li {
+			height: 86px;
+			a {
+				color: $font-color-yellow;
+				height: 100%;
+				padding:32px 20px;
+				font-size: 1.8em;
+				&:hover, &.active, &:focus {
+					background-color: $primary-color-dark; }
+			}
+		}
+		@media screen and (max-width: $screen-small) {
+			background-color: $primary-color-dark;
+			width: 100%;
+			margin: 0;
+			height:48px;
+			@include flexy();
+			li a {
+				height:48px;
+				padding: 14px 10px 6px;
+			}
+		}
+	}
+}
+
+#projects {
+	@include flexy();
+	.project {
+		background-size: $project-disc-size $project-disc-size;
+		height: $project-disc-size;
+		width: $project-disc-size;
+		border-radius: 50%;
+		border: 20px solid $primary-color;
+		border-style: inset;
+		margin: 20px;
+		.content {
+			position: relative;
+			height: $project-disc-size - 40px;
+			width: $project-disc-size - 40px;
+			border-radius: 50%;
+			padding: 20px 30px;
+			text-align: center;
+			background-color: rgba(233, 30, 99, 0.4);
+			h2 {
+				text-shadow: 2px 8px 8px #000;
+			}
+			p {
+				color: #fff;
+				font-weight: bold;
+				font-size: 1.6em;
+				text-shadow: 1px 4px 4px #333;
+			}
+			a {
+				font-family: $lobster;
+				font-size: 1.2em;
+				font-weight: bold;
+				position: absolute;
+				background-color: darken($primary-color, 20%);
+				padding: 20px 0;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				color: $font-color-yellow;
+				box-shadow: 1px 4px 4px #333;
+				&:hover {
+					text-decoration: none;
+				}
+				&.github {
+					right: 50px;
+					bottom:-20px;
+				}
+				&.link {
+					right: -20px;
+					bottom:50px;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 40px;
+	.icons {
+		@include flexy();
+	}
+	.logo {
+		height: $icon-size;
+		width: $icon-size;
+		border-radius: 50%;
+		margin: 10px;
+	}
+	p {
+		text-align: center;
+	}
+}
