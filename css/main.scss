@@ -1,0 +1,261 @@
+// Design by Kenneth Black 2015, lawlietblack.com
+
+$primary-color: #E91E63;
+$primary-color-dark: darken($primary-color, 20%);
+$font-color-yellow: #FFF176;
+$background-color:#2A363B;
+
+$lobster: 'Lobster', cursive;
+$cabin: 'Cabin', Helvetica, Arial, sans-serif;
+
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+$screen-xl: 1525px;
+
+$icon-size: 40px;
+$project-disc-size: 400px;
+
+@import "_mixins.scss";
+
+:root {
+	box-sizing: border-box; }
+
+body {
+	background-color: $background-color;
+	font-family: $cabin;
+	color: #FFFFFF; }
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $lobster;
+	color: $font-color-yellow; }
+
+main {
+	width: 98%;
+	margin: auto;
+	@media screen and (max-width: $screen-small) {
+		margin-top: 50px;
+	}
+}
+nav.navbar {
+	background: linear-gradient($primary-color-dark, $primary-color);
+	padding:0;
+	height: 90px;
+	border-radius: 0;
+	border-bottom: 4px solid $primary-color-dark;
+	@media screen and (max-width: $screen-small) {
+		border: none;
+	}
+	.navbar-header {
+		h1 {
+			margin: 8px 40px 8px; }
+		p {
+			font-size: 1.2em;
+			margin: 0 60px 10px; }
+		@media screen and (max-width: $screen-small) {
+			text-align: center;
+		}
+	}
+	.navbar-right {
+		margin:0 20px;
+		height: 90px;
+		li {
+			height: 86px;
+			a {
+				color: $font-color-yellow;
+				height: 100%;
+				padding:32px 20px;
+				font-size: 1.8em;
+				&:hover, &.active, &:focus {
+					background-color: $primary-color-dark; }
+			}
+		}
+		@media screen and (max-width: $screen-small) {
+			background-color: $primary-color-dark;
+			width: 100%;
+			margin: 0;
+			height:48px;
+			@include flexy();
+			li a {
+				height:48px;
+				padding: 14px 10px 6px;
+			}
+		}
+	}
+}
+a {
+	color: $font-color-yellow;
+	&:hover {
+		color: darken($font-color-yellow, 10%);
+	}
+}
+
+#projects {
+	@include flexy();
+	.project {
+		background-size: $project-disc-size $project-disc-size;
+		height: $project-disc-size;
+		width: $project-disc-size;
+		border-radius: 50%;
+		border: 20px solid $primary-color;
+		border-style: inset;
+		margin: 20px;
+		.content {
+			position: relative;
+			height: $project-disc-size - 40px;
+			width: $project-disc-size - 40px;
+			border-radius: 50%;
+			padding: 20px 30px;
+			text-align: center;
+			background-color: rgba(233, 30, 99, 0.2);
+			h2 {
+				text-shadow: 2px 8px 8px #000;
+			}
+			p {
+				color: #fff;
+				font-weight: bold;
+				font-size: 1.6em;
+				text-shadow: 1px 4px 4px #333;
+			}
+			a {
+				font-family: $lobster;
+				font-size: 1.2em;
+				font-weight: bold;
+				position: absolute;
+				background-color: $primary-color-dark;
+				padding: 20px 0;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				color: $font-color-yellow;
+				box-shadow: 1px 4px 4px #333;
+				&:hover {
+					text-decoration: none;
+				}
+				&.github {
+					right: 50px;
+					bottom:-20px;
+				}
+				&.link {
+					right: -20px;
+					bottom:50px;
+				}
+			}
+		}
+	}
+}
+#about-section {
+	background-color: #444;
+	width: 1500px;
+	margin: 60px auto 40px;
+	border-radius:15px;
+	#profile-pic {
+		float: left;
+		border-radius: 50%;
+		margin: -30px 10px;
+		height: $project-disc-size;
+		width: $project-disc-size;
+		border: 20px solid $primary-color;
+		border-style: inset; }
+	.half {
+		width: 500px;
+		h3 {
+			font-size:2.2em;
+			text-align: center; }
+		p {
+			font-size: 1.2em; }
+		.skill-list {
+			@include flexy();
+			li {
+				padding: 4px;
+				font-size: 1.2em;
+				margin: 4px;
+				background: linear-gradient($primary-color-dark, $primary-color);
+				border-radius:5px;
+			}
+		}
+		&.left {
+			margin: 20px 0 20px 40px;
+			float: left; }
+		&.right {
+			margin: 20px 40px 20px 0;
+			float: right; } 
+	}
+	@media screen and (max-width: $screen-xl) {
+		width: 1180px;
+		#profile-pic {
+			margin: 10px 0;
+		}
+		.half {
+			width: 370px;
+			&.left, &.right { 
+				margin: 10px;
+			}
+		}
+	}
+	@media screen and (max-width: $screen-large) {
+		margin:120px auto 40px;
+		width: 820px;
+		#profile-pic {
+			float: right;
+			margin: -80px -80px 0 0;
+		}
+		.half.left {
+			width: 450px;
+			margin: 0 20px;
+		}
+		.half.right {
+			width: 100%;
+			margin: 0 20px 20px;
+		}
+	}
+	@media screen and (max-width: $screen-medium) {
+		margin-top: 240px;
+		width: 95%;
+		position: relative;
+		#profile-pic {
+			height: $project-disc-size * 3 / 4 ;
+			width: $project-disc-size * 3 / 4 ;
+			margin: 0 auto;
+			position: absolute;
+			top: -150px;
+	    left:0;
+	    right:0;
+		}
+		.half.left {
+			margin:($project-disc-size * 3 / 8 ) 0 0;
+		}
+		.half.right {
+			margin: 0 0 20px;
+		}
+		.half.right, .half.left {
+			padding: 20px;
+			width: 100%;
+			float: none;
+			clear: both;
+		}
+	}
+}
+
+footer {
+	margin-top: 100px;
+	.icons {
+		@include flexy();
+	}
+	.logo {
+		height: $icon-size;
+		width: $icon-size;
+		border-radius: 50%;
+		margin: 10px;
+	}
+	p {
+		text-align: center;
+	}
+}

@@ -1,0 +1,10 @@
+<div id="projects" class="row">
+	<div class="project" ng-repeat="project in projects" style="background-image: url('{{project.img}}')">
+		<div class="content">
+			<h2>{{project.title}}</h2>
+			<p>{{project.description}}</p>
+			<a class="github" href= "{{project.github}}">Github</a>
+			<a class="link" href="{{project.link}}">Website</a>
+		</div>
+	</div>
+</div>
