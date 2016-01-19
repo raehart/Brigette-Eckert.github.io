@@ -66,6 +66,11 @@ nav.navbar {
           height: 48px;
           padding: 14px 10px 6px; } }
 
+a {
+  color: #FFF176; }
+  a:hover {
+    color: #ffec43; }
+
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -115,8 +120,90 @@ nav.navbar {
           right: -20px;
           bottom: 50px; }
 
+#about-section {
+  background-color: #444;
+  width: 1500px;
+  margin: 60px auto 40px;
+  border-radius: 15px; }
+  #about-section #profile-pic {
+    float: left;
+    border-radius: 50%;
+    margin: -30px 10px;
+    height: 400px;
+    width: 400px;
+    border: 20px solid #E91E63;
+    border-style: inset; }
+  #about-section .half {
+    width: 500px; }
+    #about-section .half h3 {
+      font-size: 2.2em;
+      text-align: center; }
+    #about-section .half p {
+      font-size: 1.2em; }
+    #about-section .half .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center; }
+      #about-section .half .skill-list li {
+        padding: 4px;
+        font-size: 1.2em;
+        margin: 4px;
+        background: linear-gradient(#930e3b, #E91E63);
+        border-radius: 5px; }
+    #about-section .half.left {
+      margin: 20px 0 20px 40px;
+      float: left; }
+    #about-section .half.right {
+      margin: 20px 40px 20px 0;
+      float: right; }
+  @media screen and (max-width: 1525px) {
+    #about-section {
+      width: 1180px; }
+      #about-section #profile-pic {
+        margin: 10px 0; }
+      #about-section .half {
+        width: 370px; }
+        #about-section .half.left, #about-section .half.right {
+          margin: 10px; } }
+  @media screen and (max-width: 1200px) {
+    #about-section {
+      margin: 120px auto 40px;
+      width: 820px; }
+      #about-section #profile-pic {
+        float: right;
+        margin: -80px -80px 0 0; }
+      #about-section .half.left {
+        width: 450px;
+        margin: 0 20px; }
+      #about-section .half.right {
+        width: 100%;
+        margin: 0 20px 20px; } }
+  @media screen and (max-width: 992px) {
+    #about-section {
+      margin-top: 240px;
+      width: 95%;
+      position: relative; }
+      #about-section #profile-pic {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        right: 0; }
+      #about-section .half.left {
+        margin: 150px 0 0; }
+      #about-section .half.right {
+        margin: 0 0 20px; }
+      #about-section .half.right, #about-section .half.left {
+        padding: 20px;
+        width: 100%;
+        float: none;
+        clear: both; } }
+
 footer {
-  margin-top: 40px; }
+  margin-top: 100px; }
   footer .icons {
     display: flex;
     flex-wrap: wrap;

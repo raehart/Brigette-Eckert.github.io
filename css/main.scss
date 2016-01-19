@@ -11,6 +11,7 @@ $cabin: 'Cabin', Helvetica, Arial, sans-serif;
 $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
+$screen-xl: 1525px;
 
 $icon-size: 40px;
 $project-disc-size: 400px;
@@ -43,7 +44,6 @@ main {
 		margin-top: 50px;
 	}
 }
-
 nav.navbar {
 	background: linear-gradient($primary-color-dark, $primary-color);
 	padding:0;
@@ -88,6 +88,12 @@ nav.navbar {
 				padding: 14px 10px 6px;
 			}
 		}
+	}
+}
+a {
+	color: $font-color-yellow;
+	&:hover {
+		color: darken($font-color-yellow, 10%);
 	}
 }
 
@@ -145,9 +151,102 @@ nav.navbar {
 		}
 	}
 }
+#about-section {
+	background-color: #444;
+	width: 1500px;
+	margin: 60px auto 40px;
+	border-radius:15px;
+	#profile-pic {
+		float: left;
+		border-radius: 50%;
+		margin: -30px 10px;
+		height: $project-disc-size;
+		width: $project-disc-size;
+		border: 20px solid $primary-color;
+		border-style: inset;
+	}
+	.half {
+		width: 500px;
+		h3 {
+			font-size:2.2em;
+			text-align: center; }
+		p {
+			font-size: 1.2em; }
+		.skill-list {
+			@include flexy();
+			li {
+				padding: 4px;
+				font-size: 1.2em;
+				margin: 4px;
+				background: linear-gradient($primary-color-dark, $primary-color);
+				border-radius:5px;
+			}
+		}
+		&.left {
+			margin: 20px 0 20px 40px;
+			float: left; }
+		&.right {
+			margin: 20px 40px 20px 0;
+			float: right; } 
+	}
+	@media screen and (max-width: $screen-xl) {
+		width: 1180px;
+		#profile-pic {
+			margin: 10px 0;
+		}
+		.half {
+			width: 370px;
+			&.left, &.right { 
+				margin: 10px;
+			}
+		}
+	}
+	@media screen and (max-width: $screen-large) {
+		margin:120px auto 40px;
+		width: 820px;
+		#profile-pic {
+			float: right;
+			margin: -80px -80px 0 0;
+		}
+		.half.left {
+			width: 450px;
+			margin: 0 20px;
+		}
+		.half.right {
+			width: 100%;
+			margin: 0 20px 20px;
+		}
+	}
+	@media screen and (max-width: $screen-medium) {
+		margin-top: 240px;
+		width: 95%;
+		position: relative;
+		#profile-pic {
+			height: $project-disc-size * 3 / 4 ;
+			width: $project-disc-size * 3 / 4 ;
+			margin: 0 auto;
+			position: absolute;
+			top: -150px;
+	    left:0;
+	    right:0;
+		}
+		.half.left {
+			margin:($project-disc-size * 3 / 8 ) 0 0;
+		}
+		.half.right {
+			margin: 0 0 20px;
+		}
+		.half.right, .half.left {
+			padding: 20px;
+			width: 100%;
+			float: none;
+			clear: both;
+		}
+	}
+}
 
 footer {
-	margin-top: 40px;
+	margin-top: 100px;
 	.icons {
 		@include flexy();
 	}
