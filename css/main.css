@@ -95,7 +95,7 @@ a {
       #projects .project .content h2 {
         text-shadow: 2px 8px 8px #000; }
       #projects .project .content p {
-        color: #fff;
+        color: white;
         font-weight: bold;
         font-size: 1.6em;
         text-shadow: 1px 4px 4px #333; }

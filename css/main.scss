@@ -3,6 +3,7 @@
 $primary-color: #E91E63;
 $primary-color-dark: darken($primary-color, 20%);
 $font-color-yellow: #FFF176;
+$font-color-yellow-light: lighten($font-color-yellow, 70%);
 $background-color:#2A363B;
 
 $lobster: 'Lobster', cursive;
@@ -119,7 +120,7 @@ a {
 				text-shadow: 2px 8px 8px #000;
 			}
 			p {
-				color: #fff;
+				color: $font-color-yellow-light;
 				font-weight: bold;
 				font-size: 1.6em;
 				text-shadow: 1px 4px 4px #333;
