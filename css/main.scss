@@ -9,6 +9,7 @@ $background-color:#2A363B;
 $lobster: 'Lobster', cursive;
 $cabin: 'Cabin', Helvetica, Arial, sans-serif;
 
+$screen-xs: 425px;
 $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
@@ -16,6 +17,7 @@ $screen-xl: 1525px;
 
 $icon-size: 40px;
 $project-disc-size: 400px;
+$small-disc: $project-disc-size * 3 / 4;
 
 @import "_mixins.scss";
 
@@ -25,6 +27,7 @@ $project-disc-size: 400px;
 body {
 	background-color: $background-color;
 	font-family: $cabin;
+	overflow-x: hidden;
 	color: #FFFFFF; }
 ul {
 	margin: 0;
@@ -39,9 +42,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: $font-color-yellow; }
 
 main {
-	width: 98%;
+	box-sizing: border-box;
+	width: 95%;
 	margin: auto;
 	@media screen and (max-width: $screen-small) {
+		width: 92%;
 		margin-top: 50px;
 	}
 }
@@ -62,6 +67,10 @@ nav.navbar {
 			margin: 0 60px 10px; }
 		@media screen and (max-width: $screen-small) {
 			text-align: center;
+			h1, p {
+				margin-left: 0;
+				margin-right: 0;
+			}
 		}
 	}
 	.navbar-right {
@@ -150,6 +159,36 @@ a {
 				}
 			}
 		}
+		@media screen and (max-width:$screen-xs) {
+			background-size: $small-disc $small-disc;
+			height: $small-disc;
+			width: $small-disc;
+			.content {
+				height: $small-disc - 40px;
+				width: $small-disc - 40px;
+				padding: 10px;
+				h2 {
+					margin: 10px 0;
+					font-size: 1.8em;
+				}
+				p {
+					font-size: 1.2em;
+				}
+				a {
+					height:56px;
+					width: 56px;
+					padding: 14px 0;
+					&.github {
+						right: 30px;
+						bottom:-20px;
+					}
+					&.link {
+						right: -20px;
+						bottom:30px;
+					}
+				}
+			}
+		}
 	}
 }
 #about-section {
@@ -214,7 +253,8 @@ a {
 		}
 		.half.right {
 			width: 100%;
-			margin: 0 20px 20px;
+			margin: 0;
+			padding: 20px;
 		}
 	}
 	@media screen and (max-width: $screen-medium) {
@@ -255,6 +295,9 @@ footer {
 		width: $icon-size;
 		border-radius: 50%;
 		margin: 10px;
+		@media screen and (max-width:$screen-xs) {
+			margin: 4px;
+		}
 	}
 	p {
 		text-align: center;

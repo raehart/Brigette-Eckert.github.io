@@ -4,6 +4,7 @@
 body {
   background-color: #2A363B;
   font-family: "Cabin", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
   color: #FFFFFF; }
 
 ul {
@@ -17,10 +18,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF176; }
 
 main {
-  width: 98%;
+  box-sizing: border-box;
+  width: 95%;
   margin: auto; }
   @media screen and (max-width: 768px) {
     main {
+      width: 92%;
       margin-top: 50px; } }
 
 nav.navbar {
@@ -39,7 +42,10 @@ nav.navbar {
     margin: 0 60px 10px; }
   @media screen and (max-width: 768px) {
     nav.navbar .navbar-header {
-      text-align: center; } }
+      text-align: center; }
+      nav.navbar .navbar-header h1, nav.navbar .navbar-header p {
+        margin-left: 0;
+        margin-right: 0; } }
   nav.navbar .navbar-right {
     margin: 0 20px;
     height: 90px; }
@@ -119,6 +125,30 @@ a {
         #projects .project .content a.link {
           right: -20px;
           bottom: 50px; }
+    @media screen and (max-width: 425px) {
+      #projects .project {
+        background-size: 300px 300px;
+        height: 300px;
+        width: 300px; }
+        #projects .project .content {
+          height: 260px;
+          width: 260px;
+          padding: 10px; }
+          #projects .project .content h2 {
+            margin: 10px 0;
+            font-size: 1.8em; }
+          #projects .project .content p {
+            font-size: 1.2em; }
+          #projects .project .content a {
+            height: 56px;
+            width: 56px;
+            padding: 14px 0; }
+            #projects .project .content a.github {
+              right: 30px;
+              bottom: -20px; }
+            #projects .project .content a.link {
+              right: -20px;
+              bottom: 30px; } }
 
 #about-section {
   background-color: #444;
@@ -178,7 +208,8 @@ a {
         margin: 0 20px; }
       #about-section .half.right {
         width: 100%;
-        margin: 0 20px 20px; } }
+        margin: 0;
+        padding: 20px; } }
   @media screen and (max-width: 992px) {
     #about-section {
       margin-top: 240px;
@@ -214,6 +245,9 @@ footer {
     width: 40px;
     border-radius: 50%;
     margin: 10px; }
+    @media screen and (max-width: 425px) {
+      footer .logo {
+        margin: 4px; } }
   footer p {
     text-align: center; }
 
