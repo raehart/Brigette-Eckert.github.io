@@ -49,7 +49,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 		link: 'http://git.bbeckert.com/calculator/'
 		},{
 		title: 'Local Weather',
-		img: 'img/projects/weather.png',
+		img: 'img/projects/weather1.png',
 		description: 'A weather displaying built using Javascript, Sass and Open Weather API (Bowser location must be on). Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/local-weather',
 		link: 'http://git.bbeckert.com/local-weather/'
