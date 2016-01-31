@@ -47,5 +47,11 @@ angular.module('PortfolioApp', ['ngRoute'])
 		description: 'A calculator built using Javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/calculator',
 		link: 'http://git.bbeckert.com/calculator/'
+		},{
+		title: 'Local Weather',
+		img: 'img/projects/weather.png',
+		description: 'A weather displaying built using Javascript, Sass and Open Weather API (Bowser location must be on). Reversed engineered as a student at Free Code Camp.',
+		github: 'https://github.com/Brigette-Eckert/local-weather',
+		link: 'http://git.bbeckert.com/local-weather/'
 	}]
 }])
