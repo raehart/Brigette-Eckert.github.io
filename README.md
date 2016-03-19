@@ -1,4 +1,7 @@
 # Brigette-Eckert.github.io
+
+http://brigette-eckert.github.io/
+
 Portfolio
 
 http://bbeckert.com/#/
