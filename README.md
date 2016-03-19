@@ -1,6 +1,7 @@
 # Brigette-Eckert.github.io
 Portfolio
 
+http://bbeckert.com/#/
 
 My portfolio displaying my current work.
 
