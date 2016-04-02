@@ -9,8 +9,13 @@ angular.module('PortfolioApp', ['ngRoute'])
 			controller: 'MainController',
 			templateUrl: 'views/about.html'
 		}).when('/questions', {
-			controller: 'MainController',
+			controller: 'QuestionsController',
 			templateUrl: 'views/questions.html'
+
+		}).when('/resume', {
+			controller: 'MainController',
+			templateUrl: 'views/resume.html'
+
 		});
 }])
 .controller('NavController', ['$scope', '$location', function($scope, $location) {
@@ -72,6 +77,14 @@ angular.module('PortfolioApp', ['ngRoute'])
 }])
 
 //add questions controller 
-.controller('QuestionsController')
 //make http .get request to get external json 
 //set scope for each set of questions 
+.controller('QuestionsController', ['$scope', '$http', function($scope, $http){
+	$scope.data;
+	$http.get('js/questions.js').success(function(data){
+		console.log(data);
+		$scope.data =  data;
+	}).error(function(err){
+		console.log(err);
+	});
+}])

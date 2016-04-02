@@ -251,4 +251,11 @@ footer {
   footer p {
     text-align: center; }
 
+#questions {
+  text-align: center; }
+
+.qs {
+  background-color: #444;
+  border-radius: 15px; }
+
 /*# sourceMappingURL=main.css.map */
