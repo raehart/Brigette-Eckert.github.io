@@ -8,6 +8,9 @@ angular.module('PortfolioApp', ['ngRoute'])
 		}).when('/about', {
 			controller: 'MainController',
 			templateUrl: 'views/about.html'
+		}).when('/questions', {
+			controller: 'MainController',
+			templateUrl: 'views/questions.html'
 		});
 }])
 .controller('NavController', ['$scope', '$location', function($scope, $location) {
@@ -20,7 +23,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 	$scope.projects = [{
 		title: 'Random Cat Fact',
 		img: 'img/projects/cats.png',
-		description: 'A random fact generator that displays cat facts when the button is clicked and allows user\'s to tweet fact.  Build with JavaScript, Twitter developer tools and external restful API.',
+		description: 'A random fact generator that displays cat facts when the button is clicked and allows user\'s to tweet fact.  Build with JavaScript, Twitter developer tools and external restful API. Reversed engineered for use at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/cat_facts',
 		link: 'http://git.bbeckert.com/cat_facts/'
 		}, {
