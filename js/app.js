@@ -79,7 +79,12 @@ angular.module('PortfolioApp', ['ngRoute'])
 //add questions controller 
 //make http .get request to get external json 
 //set scope for each set of questions 
-.controller('QuestionsController', ['$scope', '$http', function($scope, $http){
+.controller('QuestionsController', ['$scope', function($scope){
 	$scope.questions = questions;
-	console.log($scope.questions)
+	$scope.basics = $scope.questions.basic;
+	$scope.behaviorals =$scope.questions.behavioral;
+	$scope.carrers = $scope.questions.carrer;
+	$scope.technicals = $scope.questions.technical;
+	$scope.funzies = $scope.questions.fun;
+	console.log($scope.questions);
 }])

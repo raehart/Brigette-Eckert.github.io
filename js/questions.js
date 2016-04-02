@@ -10,6 +10,6 @@ questions.carrer = [{Q: 'What are your future career goals?', A:''}, {Q: 'How do
  
 questions.technical = [{Q: 'Whats your preferre IDE and Why?', A:''}, {Q: 'What do you when you get stuck on a problem?', A:''}];
 
-questions.fun = [{Q: 'How do you like your coffee?', A:''}, {Q: 'What is the last book you read?  ', A:''}, {Q: 'What is the best movie you have seen in the last year?', A:''}, {Q: 'What would you do if you won the lottery? ', A:''}, {Q: '', A:''}, {Q: '', A:''}, {Q: '', A:''}];
+questions.fun = [{Q: 'How do you like your coffee?', A:''}, {Q: 'What is the last book you read?  ', A:''}, {Q: 'What is the best movie you have seen in the last year?', A:''}, {Q: 'What would you do if you won the lottery? ', A:''}];
 
 //{Q: '', A:''}
