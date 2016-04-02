@@ -80,11 +80,6 @@ angular.module('PortfolioApp', ['ngRoute'])
 //make http .get request to get external json 
 //set scope for each set of questions 
 .controller('QuestionsController', ['$scope', '$http', function($scope, $http){
-	$scope.data;
-	$http.get('js/questions.js').success(function(data){
-		console.log(data);
-		$scope.data =  data;
-	}).error(function(err){
-		console.log(err);
-	});
+	$scope.questions = questions;
+	console.log($scope.questions)
 }])
