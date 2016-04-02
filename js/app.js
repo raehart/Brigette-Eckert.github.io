@@ -70,3 +70,8 @@ angular.module('PortfolioApp', ['ngRoute'])
 		link: 'http://git.bbeckert.com/twitch'
 		}]
 }])
+
+//add questions controller 
+.controller('QuestionsController')
+//make http .get request to get external json 
+//set scope for each set of questions 
