@@ -251,11 +251,12 @@ footer {
   footer p {
     text-align: center; }
 
-#questions {
+#questions h3 {
   text-align: center; }
 
 .qs {
   background-color: #444;
-  border-radius: 15px; }
+  border-radius: 15px;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */
