@@ -12,10 +12,6 @@ angular.module('PortfolioApp', ['ngRoute'])
 			controller: 'QuestionsController',
 			templateUrl: 'views/questions.html'
 
-		}).when('/resume', {
-			controller: 'MainController',
-			templateUrl: 'views/resume.html'
-
 		});
 }])
 .controller('NavController', ['$scope', '$location', function($scope, $location) {
