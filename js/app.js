@@ -46,12 +46,6 @@ angular.module('PortfolioApp', ['ngRoute'])
 		github: 'https://github.com/Brigette-Eckert/local-weather',
 		link: 'http://git.bbeckert.com/local-weather/'
 	}, {
-		title: 'Pac-NW Race Calendar',
-		img: 'img/projects/racecal.png',
-		description: 'A calendar that displays upcoming races in Oregon and Washington. Built using a jQuery, JSON, and AngularJS.',
-		github: 'https://github.com/Brigette-Eckert/PacNW-Race-Calendar',
-		link: 'http://git.bbeckert.com/race-calendar'
-		}, {
 		title: 'Pokedex',
 		img: 'img/projects/pokemon.png',
 		description: 'A guide to all the Pokemon in the Pokemon universe. Built with Angular JS and an external API.',
