@@ -63,7 +63,20 @@ angular.module('PortfolioApp', ['ngRoute'])
 		description: 'A site that allows you to see if certain users are online on twitch and what they are currently streaming. Built using AngularJS, and twitch API. Reversed engineered as a student at Free Code Camp..',
 		github: 'https://github.com/Brigette-Eckert/twitch',
 		link: 'http://git.bbeckert.com/twitch'
-		}]
+		},  {
+		title: 'Tic Tac Toe',
+		img: 'img/projects/tictactoe.png',
+		description: 'The classic game of Tic Tac Toe. Built using javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp..',
+		github: 'https://github.com/Brigette-Eckert/tic-tac-toe',
+		link: 'http://git.bbeckert.com/tic-tac-toe/'
+		},  {
+		title: 'Simon',
+		img: 'img/projects/simon.png',
+		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
+		github: 'https://github.com/Brigette-Eckert/simon',
+		link: 'http://git.bbeckert.com/simon'
+		}
+		]
 }])
 
 //add questions controller 
