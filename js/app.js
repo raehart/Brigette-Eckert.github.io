@@ -22,11 +22,29 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [{
-		title: 'Random Cat Fact',
-		img: 'img/projects/cats.png',
-		description: 'A random fact generator that displays cat facts when the button is clicked and allows user\'s to tweet fact.  Build with JavaScript, Twitter developer tools and external restful API. Reversed engineered for use at Free Code Camp.',
-		github: 'https://github.com/Brigette-Eckert/cat_facts',
-		link: 'http://git.bbeckert.com/cat_facts/'
+		title: 'Code Journal',
+		img: 'img/projects/journal.png',
+		description: 'Learning Journal CMS made with Django',
+		github: 'https://github.com/Brigette-Eckert/journal',
+		link: 'https://journal-bbeckert.herokuapp.com '
+		},  {
+		title: 'Simon',
+		img: 'img/projects/simon.png',
+		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
+		github: 'https://github.com/Brigette-Eckert/simon',
+		link: 'http://git.bbeckert.com/simon'
+		},{
+		title: 'Pokedex',
+		img: 'img/projects/pokemon.png',
+		description: 'A guide to all the Pokemon in the Pokemon universe. Built with Angular JS and an external API.',
+		github: 'https://github.com/Brigette-Eckert/pokedex',
+		link: 'http://pokedex.lawlietblack.com'
+		},  {
+		title: 'Tic Tac Toe',
+		img: 'img/projects/tictactoe.png',
+		description: 'The classic game of Tic Tac Toe. Built using javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp..',
+		github: 'https://github.com/Brigette-Eckert/tic-tac-toe',
+		link: 'http://git.bbeckert.com/tic-tac-toe/'
 		}, {
 		title: 'Pomodoro Clock',
 		img: 'img/projects/clock.png',
@@ -39,12 +57,6 @@ angular.module('PortfolioApp', ['ngRoute'])
 		description: 'A calculator built using Javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/calculator',
 		link: 'http://git.bbeckert.com/calculator/'
-		},{
-		title: 'Pokedex',
-		img: 'img/projects/pokemon.png',
-		description: 'A guide to all the Pokemon in the Pokemon universe. Built with Angular JS and an external API.',
-		github: 'https://github.com/Brigette-Eckert/pokedex',
-		link: 'http://pokedex.lawlietblack.com'
 		}, {
 		title: 'Wikipedia Viewer',
 		img: 'img/projects/wiki.png',
@@ -57,20 +69,14 @@ angular.module('PortfolioApp', ['ngRoute'])
 		description: 'A site that allows you to see if certain users are online on twitch and what they are currently streaming. Built using AngularJS, and twitch API. Reversed engineered as a student at Free Code Camp..',
 		github: 'https://github.com/Brigette-Eckert/twitch',
 		link: 'http://git.bbeckert.com/twitch'
-		},  {
-		title: 'Tic Tac Toe',
-		img: 'img/projects/tictactoe.png',
-		description: 'The classic game of Tic Tac Toe. Built using javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp..',
-		github: 'https://github.com/Brigette-Eckert/tic-tac-toe',
-		link: 'http://git.bbeckert.com/tic-tac-toe/'
-		},  {
-		title: 'Simon',
-		img: 'img/projects/simon.png',
-		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
-		github: 'https://github.com/Brigette-Eckert/simon',
-		link: 'http://git.bbeckert.com/simon'
+		}, {
+		title: 'Random Cat Fact',
+		img: 'img/projects/cats.png',
+		description: 'A random fact generator that displays cat facts when the button is clicked and allows user\'s to tweet fact.  Build with JavaScript, Twitter developer tools and external restful API. Reversed engineered for use at Free Code Camp.',
+		github: 'https://github.com/Brigette-Eckert/cat_facts',
+		link: 'http://git.bbeckert.com/cat_facts/'
 		}
-		]
+	]
 }])
 
 //add questions controller 
