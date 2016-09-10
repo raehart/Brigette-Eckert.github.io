@@ -31,7 +31,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 		title: 'Simon',
 		img: 'img/projects/simon.png',
 		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
-		github: 'https://github.com/Brigette-Eckert/simon',
+		github: 'https://github.1com/Brigette-Eckert/simon',
 		link: 'http://git.bbeckert.com/simon'
 		},{
 		title: 'Pokedex',
@@ -42,7 +42,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 		},  {
 		title: 'Tic Tac Toe',
 		img: 'img/projects/tictactoe.png',
-		description: 'The classic game of Tic Tac Toe. Built using javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp..',
+		description: 'The classic game of Tic Tac Toe. Built using javascript, jQuery and Sass. Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/tic-tac-toe',
 		link: 'http://git.bbeckert.com/tic-tac-toe/'
 		}, {
@@ -60,13 +60,13 @@ angular.module('PortfolioApp', ['ngRoute'])
 		}, {
 		title: 'Wikipedia Viewer',
 		img: 'img/projects/wiki.png',
-		description: 'An electronic card catalog for Wikipedia. Allows user to search for a topic or view a randon article. Built using jquery, and media wiki API. Reversed engineered as a student at Free Code Camp..',
+		description: 'An electronic card catalog for Wikipedia. Allows user to search for a topic or view a randon article. Built using jquery, and media wiki API. Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/wikipedia_viewer',
 		link: 'http://git.bbeckert.com/wikipedia_viewer'
 		}, {
 		title: 'Twitch Streaming Status',
 		img: 'img/projects/twitch.png',
-		description: 'A site that allows you to see if certain users are online on twitch and what they are currently streaming. Built using AngularJS, and twitch API. Reversed engineered as a student at Free Code Camp..',
+		description: 'A site that allows you to see if certain users are online on twitch and what they are currently streaming. Built using AngularJS, and twitch API. Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/twitch',
 		link: 'http://git.bbeckert.com/twitch'
 		}, {
