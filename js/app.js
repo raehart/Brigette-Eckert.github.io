@@ -22,12 +22,18 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [{
+		title: 'Markdown Preview',
+		img: 'img/projects/markdown.png',
+		description: 'An app that lets you type and see markdown test displayed instantly.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
+		github: 'https://github.com/Brigette-Eckert/markdown-preview',
+		link: 'http://git.bbeckert.com/markdown'
+		},{
 		title: 'Code Journal',
 		img: 'img/projects/journal.png',
 		description: 'Learning Journal CMS made with Django',
 		github: 'https://github.com/Brigette-Eckert/journal',
 		link: 'https://journal-bbeckert.herokuapp.com '
-		},  {
+		},{
 		title: 'Simon',
 		img: 'img/projects/simon.png',
 		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
