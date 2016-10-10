@@ -66,7 +66,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 		}, {
 		title: 'Wikipedia Viewer',
 		img: 'img/projects/wiki.png',
-		description: 'An electronic card catalog for Wikipedia. Allows user to search for a topic or view a randon article. Built using jquery, and media wiki API. Reversed engineered as a student at Free Code Camp.',
+		description: 'An electronic card catalog for Wikipedia. Allows user to search for a topic or view a random article. Built using jquery, and media wiki API. Reversed engineered as a student at Free Code Camp.',
 		github: 'https://github.com/Brigette-Eckert/wikipedia_viewer',
 		link: 'http://git.bbeckert.com/wikipedia_viewer'
 		}, {
