@@ -22,6 +22,12 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [{
+		title: 'FCC Camper Leaderboard',
+		img: 'img/projects/leaderboard.png',
+		description: 'An app that displays the leaderboard for Free Code Camp.  Allows you to sort by either all time or recent points.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
+		github: 'https://github.com/Brigette-Eckert/camper-leaderboard',
+		link: 'http://git.bbeckert.com/camper-leaderboard/'
+		},{
 		title: 'Markdown Preview',
 		img: 'img/projects/markdown.png',
 		description: 'An app that lets you type and see markdown test displayed instantly.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
