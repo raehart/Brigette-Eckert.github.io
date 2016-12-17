@@ -22,17 +22,29 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [{
-		title: 'FCC Camper Leaderboard',
-		img: 'img/projects/leaderboard.png',
-		description: 'An app that displays the leaderboard for Free Code Camp.  Allows you to sort by either all time or recent points.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
-		github: 'https://github.com/Brigette-Eckert/camper-leaderboard',
-		link: 'http://git.bbeckert.com/camper-leaderboard/'
+		title: 'Flourish & Blotts',
+		img: 'img/projects/fb.png',
+		description: 'Website for Harry Potter\'s Flourish & Blotts Bookstore.  Includes, books, book reviews and multiple user roles. Built using Drupal 7',
+		github: 'https://github.com/Brigette-Eckert/Flourish---Blotts-Bookstore',
+		link: 'http://fnb.bbeckert.com/'
+		},{
+		title: 'NomNoms Recipe Blog',
+		img: 'img/projects/nomnoms.png',
+		description: 'A Recipe Blog including recipes, image gallery, and articles related to cooking. Includes multiple user roles. Built using Drupal 7',
+		github: 'https://github.com/Brigette-Eckert/nom-noms',
+		link: 'http://nomnoms.lawlietblack.com/recipes'
 		},{
 		title: 'Markdown Preview',
 		img: 'img/projects/markdown.png',
 		description: 'An app that lets you type and see markdown test displayed instantly.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
 		github: 'https://github.com/Brigette-Eckert/markdown-preview',
 		link: 'http://git.bbeckert.com/markdown'
+		},{
+		title: 'FCC Camper Leaderboard',
+		img: 'img/projects/leaderboard.png',
+		description: 'An app that displays the leaderboard for Free Code Camp.  Allows you to sort by either all time or recent points.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
+		github: 'https://github.com/Brigette-Eckert/camper-leaderboard',
+		link: 'http://git.bbeckert.com/camper-leaderboard/'
 		},{
 		title: 'Code Journal',
 		img: 'img/projects/journal.png',
