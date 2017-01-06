@@ -23,7 +23,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [
 		{title: 'Crafter\'s Corner',
-			img: 'img/projects/crafters.png',
+			img: 'img/projects/crafter.png',
 			description: 'Craft sharing website.  Includes different categories of crafts with tutorials and tips and tricks. Built using Drupal 7',
 			github: 'https://github.com/Brigette-Eckert/Crafters-Corner',
 			link: 'http://live-crafters-corner.pantheonsite.io/'
@@ -35,7 +35,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 			link: 'http://universe.bbeckert.com/'
 		},{
 		title: 'Flourish & Blotts',
-		img: 'img/projects/fb.png',
+		img: 'img/projects/fnb.png',
 		description: 'Website for Harry Potter\'s Flourish & Blotts Bookstore.  Includes, books, book reviews and multiple user roles. Built using Drupal 7',
 		github: 'https://github.com/Brigette-Eckert/Flourish---Blotts-Bookstore',
 		link: 'http://fnb.bbeckert.com/'
