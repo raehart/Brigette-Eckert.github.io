@@ -1,6 +1,4 @@
-// Design by Kenneth Black 2015, lawlietblack.com
-
-$primary-color: #E91E63;
+/* Design by Kenneth Black 2015, lawlietblack.com*/ $primary-color: #E91E63;
 $primary-color-dark: darken($primary-color, 20%);
 $font-color-yellow: #FFF176;
 $font-color-yellow-light: lighten($font-color-yellow, 70%);
@@ -317,6 +315,10 @@ footer {
 	width: 80%;
 	margin-right: 10%;
 	margin-left: 10%;
+}
+
+#questions b {
+	color: $font-color-yellow;
 }
 
 .answers {
