@@ -22,6 +22,12 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [
+        {title: 'Legend of Heroes: Recipe Box',
+            img: 'img/projects/loh-logo.png',
+            description: 'Recipe Box for Legend of Heroes: Trail of Cold Steel Video Game.  Built using AngularJS 2',
+            github: 'https://github.com/Brigette-Eckert/legends-of-heroes-recipe-box',
+            link: 'https://brigette-eckert.github.io//legends-of-heroes-recipe-box/'
+        },
 		{title: 'Crafter\'s Corner',
 			img: 'img/projects/crafter.png',
 			description: 'Craft sharing website.  Includes different categories of crafts with tutorials and tips and tricks. Built using Drupal 7',
@@ -72,7 +78,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 		},{
 		title: 'Pokedex',
 		img: 'img/projects/pokemon.png',
-		description: 'A guide to all the Pokemon in the Pokemon universe. Built with Angular JS and an external API.',
+		description: 'A guide to all the Pokemon in the Pokemon universe. Built with AngularJS and an external API.',
 		github: 'https://github.com/Brigette-Eckert/pokedex',
 		link: 'http://pokedex.lawlietblack.com'
 		},  {
