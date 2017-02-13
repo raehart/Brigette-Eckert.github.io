@@ -2,6 +2,7 @@
 #Windows Thumbnail Files
 img/Thumbs.db
 img/test/Thumbs.db
+.idea
 
 #node
 node_modules
