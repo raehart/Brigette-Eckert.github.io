@@ -67,7 +67,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 		title: 'Simon',
 		img: 'img/projects/simon.png',
 		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
-		github: 'https://github.1com/Brigette-Eckert/simon',
+		github: 'https://github.com/Brigette-Eckert/simon',
 		link: 'http://git.bbeckert.com/simon'
 		},{
 		title: 'Pokedex',
