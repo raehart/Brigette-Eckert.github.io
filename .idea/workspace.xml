@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fba3d8-b47a-4ba5-a3cb-9aa174e1600b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/about.html" afterPath="$PROJECT_DIR$/views/about.html" />
-    </list>
+    <list default="true" id="c1fba3d8-b47a-4ba5-a3cb-9aa174e1600b" name="Default" comment="" />
     <ignored path="bbeckert.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -311,12 +308,12 @@
       <workItem from="1483662882471" duration="19000" />
       <workItem from="1484935310687" duration="3343000" />
       <workItem from="1484938913875" duration="235000" />
-      <workItem from="1487012124905" duration="113000" />
+      <workItem from="1487012124905" duration="182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13133000" />
+    <option name="totallyTimeSpent" value="13202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
