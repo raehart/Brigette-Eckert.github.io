@@ -106,12 +106,12 @@ angular.module('PortfolioApp', ['ngRoute'])
 		github: 'https://github.com/Brigette-Eckert/wikipedia_viewer',
 		link: 'http://git.bbeckert.com/wikipedia_viewer'
 		}, {
-		title: 'Twitch Streaming Status',
-		img: 'img/projects/twitch.png',
-		description: 'A site that allows you to see if certain users are online on twitch and what they are currently streaming. Built using AngularJS, and twitch API. Reversed engineered as a student at Free Code Camp.',
-		github: 'https://github.com/Brigette-Eckert/twitch',
-		link: 'http://git.bbeckert.com/twitch'
-		}, {
+		// title: 'Twitch Streaming Status',
+		// img: 'img/projects/twitch.png',
+		// description: 'A site that allows you to see if certain users are online on twitch and what they are currently streaming. Built using AngularJS, and twitch API. Reversed engineered as a student at Free Code Camp.',
+		// github: 'https://github.com/Brigette-Eckert/twitch',
+		// link: 'http://git.bbeckert.com/twitch'
+		// }, {
 		title: 'Random Cat Fact',
 		img: 'img/projects/cats.png',
 		description: 'A random fact generator that displays cat facts when the button is clicked and allows user\'s to tweet fact.  Build with JavaScript, Twitter developer tools and external restful API. Reversed engineered for use at Free Code Camp.',
