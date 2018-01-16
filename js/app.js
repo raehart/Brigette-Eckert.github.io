@@ -22,6 +22,12 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [
+    {title: 'Legend of Heroes: Recipe Box',
+      img: 'img/projects/loh-logo.png',
+      description: 'Recipe Box for Legend of Heroes: Trail of Cold Steel Video Game.  Built using AngularJS 2',
+      github: 'https://github.com/Brigette-Eckert/legends-of-heroes-recipe-box',
+      link: 'https://brigette-eckert.github.io//legends-of-heroes-recipe-box/'
+    },
         {title: 'Legend of Heroes: Recipe Box',
             img: 'img/projects/loh-logo.png',
             description: 'Recipe Box for Legend of Heroes: Trail of Cold Steel Video Game.  Built using AngularJS 2',
