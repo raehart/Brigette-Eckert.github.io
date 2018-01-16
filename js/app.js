@@ -22,18 +22,18 @@ angular.module('PortfolioApp', ['ngRoute'])
 
 .controller('MainController', ['$scope', function($scope) {
 	$scope.projects = [
-    {title: 'Legend of Heroes: Recipe Box',
-      img: 'img/projects/loh-logo.png',
-      description: 'Recipe Box for Legend of Heroes: Trail of Cold Steel Video Game.  Built using AngularJS 2',
-      github: 'https://github.com/Brigette-Eckert/legends-of-heroes-recipe-box',
-      link: 'https://brigette-eckert.github.io//legends-of-heroes-recipe-box/'
+    {title: 'Tamagotchi',
+      img: 'img/projects/tamagotchi.jpg',
+      description: 'Pet Game based on the popular 90s toy Tamagotchi. Built using ReactJS',
+      github: 'https://github.com/Brigette-Eckert/tamagotchi',
+      link: '#'
     },
-        {title: 'Legend of Heroes: Recipe Box',
-            img: 'img/projects/loh-logo.png',
-            description: 'Recipe Box for Legend of Heroes: Trail of Cold Steel Video Game.  Built using AngularJS 2',
-            github: 'https://github.com/Brigette-Eckert/legends-of-heroes-recipe-box',
-            link: 'https://brigette-eckert.github.io//legends-of-heroes-recipe-box/'
-        },
+		{title: 'Legend of Heroes: Recipe Box',
+				img: 'img/projects/loh-logo.png',
+				description: 'Recipe Box for Legend of Heroes: Trail of Cold Steel Video Game.  Built using AngularJS 2',
+				github: 'https://github.com/Brigette-Eckert/legends-of-heroes-recipe-box',
+				link: 'https://brigette-eckert.github.io//legends-of-heroes-recipe-box/'
+		},
 		{title: 'Crafter\'s Corner',
 			img: 'img/projects/crafter.png',
 			description: 'Craft sharing website.  Includes different categories of crafts with tutorials and tips and tricks. Built using Drupal 7',
