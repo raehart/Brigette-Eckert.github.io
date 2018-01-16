@@ -26,7 +26,7 @@ angular.module('PortfolioApp', ['ngRoute'])
       img: 'img/projects/tamagotchi.jpg',
       description: 'Pet Game based on the popular 90s toy Tamagotchi. Built using ReactJS',
       github: 'https://github.com/Brigette-Eckert/tamagotchi',
-      link: '#'
+      link: 'http://git.bbeckert.com/tamagotchi'
     },
 		{title: 'Legend of Heroes: Recipe Box',
 				img: 'img/projects/loh-logo.png',
