@@ -69,7 +69,15 @@ angular.module('PortfolioApp', ['ngRoute'])
 		description: 'An app that displays the leaderboard for Free Code Camp.  Allows you to sort by either all time or recent points.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
 		github: 'https://github.com/Brigette-Eckert/camper-leaderboard',
 		link: 'http://git.bbeckert.com/camper-leaderboard/'
-		},{
+		},
+		// {
+		// title: 'Code Journal',
+		// img: 'img/projects/journal.png',
+		// description: 'Learning Journal CMS made with Django',
+		// github: 'https://github.com/Brigette-Eckert/journal',
+		// link: 'https://journal-bbeckert.herokuapp.com '
+		// },
+		{
 		title: 'Simon',
 		img: 'img/projects/simon.png',
 		description: 'Test your memory skils with Simon. Built using using ES6, jQuery, Gulp, and Sass. Reversed engineered as a student at Free Code Camp.',
