@@ -40,24 +40,25 @@ angular.module('PortfolioApp', ['ngRoute'])
 			github: 'https://github.com/Brigette-Eckert/Crafters-Corner',
 			link: 'http://live-crafters-corner.pantheonsite.io/'
 		},
-		{title: 'Steven Universe Fan Site',
-			img: 'img/projects/universe.jpg',
-			description: 'A Steven Universe fan website. Contains several custom simple custom modules. Built using Drupal 7',
-			github: 'https://github.com/Brigette-Eckert/steven-universe-fan-site',
-			link: 'http://universe.bbeckert.com/'
-		},{
-		title: 'Flourish & Blotts',
-		img: 'img/projects/fnb.png',
-		description: 'Website for Harry Potter\'s Flourish & Blotts Bookstore.  Includes, books, book reviews and multiple user roles. Built using Drupal 7',
-		github: 'https://github.com/Brigette-Eckert/Flourish---Blotts-Bookstore',
-		link: 'http://fnb.bbeckert.com/'
-		},{
-		title: 'NomNoms Recipe Blog',
-		img: 'img/projects/nomnoms.png',
-		description: 'A Recipe Blog including recipes, image gallery, and articles related to cooking. Includes multiple user roles. Built using Drupal 7',
-		github: 'https://github.com/Brigette-Eckert/nom-noms',
-		link: 'http://nomnoms.lawlietblack.com/recipes'
-		},{
+		// {title: 'Steven Universe Fan Site',
+		// 	img: 'img/projects/universe.jpg',
+		// 	description: 'A Steven Universe fan website. Contains several custom simple custom modules. Built using Drupal 7',
+		// 	github: 'https://github.com/Brigette-Eckert/steven-universe-fan-site',
+		// 	link: 'http://universe.bbeckert.com/'
+		// },{
+		// title: 'Flourish & Blotts',
+		// img: 'img/projects/fnb.png',
+		// description: 'Website for Harry Potter\'s Flourish & Blotts Bookstore.  Includes, books, book reviews and multiple user roles. Built using Drupal 7',
+		// github: 'https://github.com/Brigette-Eckert/Flourish---Blotts-Bookstore',
+		// link: 'http://fnb.bbeckert.com/'
+		// },{
+		// title: 'NomNoms Recipe Blog',
+		// img: 'img/projects/nomnoms.png',
+		// description: 'A Recipe Blog including recipes, image gallery, and articles related to cooking. Includes multiple user roles. Built using Drupal 7',
+		// github: 'https://github.com/Brigette-Eckert/nom-noms',
+		// link: 'http://nomnoms.lawlietblack.com/recipes'
+		// },
+		{
 		title: 'Markdown Preview',
 		img: 'img/projects/markdown.png',
 		description: 'An app that lets you type and see markdown test displayed instantly.  Built using ReactJS and Sass. Reverse engineered as a student at Free Code Camp',
