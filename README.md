@@ -1,10 +1,4 @@
-# Brigette-Eckert.github.io
-
-http://brigette-eckert.github.io/
-
-Portfolio
-
-http://bbeckert.com/#/
+Old Portfolio. 
 
 My portfolio displaying my current work.
 
